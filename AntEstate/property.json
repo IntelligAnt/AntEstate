@@ -1,0 +1,24 @@
+{
+	"id": 1,
+	"type": 0,
+	"name": "Pera",
+	"description": "Dramatic & urban condo",
+	"address": {
+		"city": "Cajetina",
+		"street": "Perina",
+		"no": 1
+	}
+	"info": {
+		"beds": 2,
+		"parking": true,
+		"heating": "ludo"
+	},
+	"area": 27.3,
+	"price": 1000.43,
+	"contact": {
+		"phone": "123",
+		"email": "pera@whitehouse.gov"
+	},
+	"photos": ["img/Pera/kupatilo.png", "img/Pera/sudopera.png"],
+	"videos": []
+}
