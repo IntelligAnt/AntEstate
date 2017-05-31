@@ -1,0 +1,24 @@
+HTTrack3.49-2+htsswf+htsjava launched on Wed, 31 May 2017 19:55:29 at https://demo-themelocation.co/mottestate/ +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar +*.gif +*.jpg +*.jpeg +*.png +*.tif +*.bmp +*.zip +*.tar +*.tgz +*.gz +*.rar +*.z +*.exe +*.mov +*.mpg +*.mpeg +*.avi +*.asf +*.mp3 +*.mp2 +*.rm +*.wav +*.vob +*.qt +*.vid +*.ac3 +*.wma +*.wmv
+(winhttrack -qwC2%Pns2u1%B%s%uN0%I0p3BaK0c3H0%kf2A250000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F  -%l "en, sr" https://demo-themelocation.co/mottestate/ -O1 "C:\Users\Konstantin\Documents\GitHub\AntEstate\AntEstate" +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar +*.gif +*.jpg +*.jpeg +*.png +*.tif +*.bmp +*.zip +*.tar +*.tgz +*.gz +*.rar +*.z +*.exe +*.mov +*.mpg +*.mpeg +*.avi +*.asf +*.mp3 +*.mp2 +*.rm +*.wav +*.vob +*.qt +*.vid +*.ac3 +*.wma +*.wmv )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+19:55:31	Error: 	"Internal Server Error" (500) after 2 retries at link https://demo-themelocation.co/robots.txt (from primary/primary)
+19:56:25	Warning: 	Retry after error -4 (No data (connection closed)) at link https://demo-themelocation.co/mottestate/images/neighbourhood-img-01.jpg (from https://demo-themelocation.co/mottestate/)
+19:56:25	Warning: 	Retry after error -4 (No data (connection closed)) at link https://demo-themelocation.co/mottestate/images/neighbourhood-img-02.jpg (from https://demo-themelocation.co/mottestate/)
+19:56:25	Warning: 	Retry after error 500 (Internal Server Error) at link https://demo-themelocation.co/mottestate/css/owl.video.play.png (from https://demo-themelocation.co/mottestate/css/owl.carousel.css)
+19:56:26	Warning: 	File not parsed, looks like binary: https://demo-themelocation.co/mottestate/fonts/fontawesome-webfont.woff2?v=4.6.3
+19:56:27	Warning: 	Retry after error -4 (No data (connection closed)) at link https://demo-themelocation.co/mottestate/images/test-sm-01.jpg (from https://demo-themelocation.co/mottestate/home-slider.html)
+19:56:27	Warning: 	Retry after error -4 (No data (connection closed)) at link https://demo-themelocation.co/mottestate/images/partners-img-01.png (from https://demo-themelocation.co/mottestate/home-slider.html)
+19:56:27	Warning: 	Retry after error -4 (No data (connection closed)) at link https://demo-themelocation.co/mottestate/js/isotope.pkgd.min.js (from https://demo-themelocation.co/mottestate/home-slider.html)
+19:57:00	Warning: 	Retry after error 500 (Internal Server Error) at link https://demo-themelocation.co/mottestate/js/jquery.accordion.js (from https://demo-themelocation.co/mottestate/about-us.html)
+19:57:00	Warning: 	Retry after error 500 (Internal Server Error) at link https://demo-themelocation.co/mottestate/css/owl.video.play.png (from https://demo-themelocation.co/mottestate/css/owl.carousel.css)
+19:57:08	Warning: 	Retry after error 500 (Internal Server Error) at link https://demo-themelocation.co/mottestate/js/jquery.accordion.js (from https://demo-themelocation.co/mottestate/about-us.html)
+19:57:08	Error: 	"Internal Server Error" (500) after 2 retries at link https://demo-themelocation.co/mottestate/css/owl.video.play.png (from https://demo-themelocation.co/mottestate/css/owl.carousel.css)
+19:57:09	Error: 	"Internal Server Error" (500) after 2 retries at link https://demo-themelocation.co/mottestate/js/jquery.accordion.js (from https://demo-themelocation.co/mottestate/about-us.html)
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 minutes 40 seconds : 135 links scanned, 122 files written (5507161 bytes overall) [5106739 bytes received at 51067 bytes/sec], 716668 bytes transferred using HTTP compression in 19 files, ratio 37%, 9.6 requests per connection
+(3 errors, 10 warnings, 0 messages)

@@ -1,0 +1,552 @@
+
+/*==========================================*/
+	/*360px CSS*/
+/*=========================================*/
+@media (max-width: 360px) {
+.tl-call-to-action-section h3 .fa{
+	display: block;
+	margin: 0 0 15px;
+}
+.tl-call-to-action-section h3{
+	font-size: 18px;
+	line-height: 24px;
+}
+header#tl-header_v2 .tl-navigation-row .tl-nav-holder{
+	margin-top: -15px;
+}
+
+
+
+}
+
+/*==========================================*/
+	/*480px CSS*/
+/*=========================================*/
+@media (max-width: 480px) {
+
+.tl-top-listed li{
+	margin-left: 15px;
+}
+.tl-dropdown-outer{
+	width: 100%;
+	text-align: center;
+}
+.tl-search-form .tl-search-address{
+	width: 100%;
+}
+.tl-search-form .btn-search-submit{
+	width: 100%;
+	text-align: center;
+	border-radius: 0;
+}
+#tl-banner-slider .tl-sider-item .tl-banner-caption{
+	padding: 10px 0 0;
+}
+.tl-banner-info{
+	width: 94%;
+	padding: 10px 15px;
+}
+.tl-banner-info h4{
+	font-size: 14px;
+}
+.tl-search-section .tl-search-bar-holder h2{
+	font-size: 20px;
+	line-height: 26px;
+	margin-bottom: 20px;
+}
+.tl-inner-banner{
+	text-align: center;
+}
+.tl-inner-banner h3{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.tl-breadcrumb-listed{
+	width: 100%;
+	text-align: center;
+}
+#tl-grid-map.tl-inner-banner .tl-searchouter_v2 .search-address-outer{
+	width: 100%;
+}
+#tl-grid-map .tl-searchouter_v2 .search-address-outer .btn-search-submit{
+	position: static;
+}
+.tl-dropdown-outer .dropdown-menu{
+	width: 100%;
+}
+.tl-modal-holder .modal-dialog{
+	width: 90%;
+}
+.tl-filterlist .found-pages{
+	margin-top: 10px;
+}
+.tl-filterlist > a, .tl-filterlist .tl-morefilter a{
+	font-size: 14px;
+	font-weight: 400;
+	margin: 0 8px;
+}
+#tl-header_v2 .tl-navigation-row .tl-nav-holder .navbar{
+	padding: 0 10px;
+}
+#tl-header_v2 .tl-navigation-row .tl-nav-holder{
+	margin-top: -50px;
+}
+#tl-header_v2 .tl-logo{
+	width: 45%;
+}
+#tl-header_v2 .tl-signup-btns{
+	padding: 10px 15px;
+}
+.tl-searchouter_v2 .search-address-outer{
+	width: 100%;
+}
+.tl-filterlist .tl-sort, .tl-filterlist .found-pages{
+	font-size: 14px;
+	font-weight: 400;
+	padding-right: 6px;
+}
+.tl-filterable-holder{
+	padding-left: 10px;
+}
+.tl-filterable-holder .tl-sort{
+	display: block;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.tl-filterlist .found-pages{
+	width: 100%;
+	text-align: center;
+	margin: 15px 0 0;
+}
+
+
+}
+
+
+/*=============================================*/
+/*767px CSS*/
+/*===============================================*/
+@media (max-width: 767px) {
+
+.tl-top-listed{
+	width: 100%;
+	text-align: center;
+}
+.tl-top-right{
+	width: 100%;
+}
+.tl-top-right .tl-signup-btns{
+	float: left;
+}
+.tl-navigation-row{
+	padding: 30px 0 15px;
+}
+.tl-nav-holder .navbar-toggle{
+	margin-top: -25px;
+	margin-right: 0;
+/*	position: relative;
+	top: -25px;
+	z-index: 99;*/
+}
+.tl-nav-holder .nav{
+	background-color: #222;
+}
+.tl-nav-holder .navbar-toggle .icon-bar{
+	background-color: #fff;
+}
+.tl-nav-holder .navbar{
+	width: 100%;
+} 
+.tl-nav-holder .navbar-collapse{
+	border: none;
+}
+.tl-nav-holder .navbar-default .navbar-nav > li{
+	padding: 10px 0px;
+	border-bottom: 1px solid #f5f5f5;	
+}
+.tl-nav-holder .navbar-default .navbar-nav > li:last-child{
+	border-bottom: none;
+}
+.tl-nav-holder .navbar-default .navbar-nav > li > a{
+	color: #fff;
+	padding: 5px 10px;
+}
+.tl-nav-holder .navbar-nav li ul, .tl-nav-holder .dropdown-menu ul{
+	opacity: 1;
+	visibility: visible;
+	display: none;
+}
+.tl-nav-holder .navbar-nav li.dropdown.open ul, .tl-nav-holder li.dropdown.open .dropdown-menu ul{
+	display: block;
+}
+.navbar-nav li a .caret{
+	float: right;
+	display: inline-block;
+	margin-top: 5px;
+}
+.tl-nav-holder .navbar-default .navbar-nav > .open > a,.tl-nav-holder  .navbar-default .navbar-nav > .open > a:hover,.tl-nav-holder  .navbar-default .navbar-nav > .open > a:focus{
+	background-color: transparent;
+}
+.tl-nav-holder .navbar-default .navbar-nav li  .dropdown-menu li a{
+	font-size: 15px;
+	padding: 12px 10px;
+	color: #fff;
+}
+.tl-nav-holder .navbar-default .navbar-nav li  .dropdown-menu li:hover a{
+	color: #fff;
+}
+.tl-search-section{
+	padding: 100px 0;
+	background-repeat: no-repeat;
+}
+.tl-search-form .btn-search-submit{
+	padding: 17px 44px;
+}
+.tl-parallax-section{
+	padding: 100px 0 70px;
+	text-align: center;
+}
+.parallax-fx-img{
+	position: absolute;
+}
+.parallax-btn{
+	float: none;
+	display: inline-block;
+}
+.tl-wrapper figure img{
+	width: 100%;
+}
+.tl-call-to-action-section{
+	text-align: center;
+}
+.tl-call-to-action-section h3{
+	margin-bottom: 30px;
+}
+.tl-call-to-action-section .tl-btn-style1{
+	float: none;
+	display: inline-block;
+}
+.tl-search-bar-holder h2{
+	font-size: 28px;
+	line-height: 30px;
+	margin-bottom: 20px;
+}
+.parallax-info{
+	padding: 0;
+}
+.parallax-info h3{
+	font-size: 26px;
+}
+#tl-testimonial-slider{
+	padding: 0 30px;
+}
+#tl-header_v3 .tl-navigation-row .tl-logo{
+	float: none;
+	display: block;
+	text-align: center;
+	margin: 0 0 20px;
+}
+#tl-header_v3 .tl-nav-holder .tl-signup-btns{
+	float: left;
+}
+#tl-header_v3 .tl-nav-holder .navbar-toggle{
+	margin-top: -40px;
+}
+#tl-header_v3 .tl-nav-holder .navbar{
+	padding: 0;
+}
+#tl-header_v3 .tl-navigation-row .container-fluid{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+#tl-banner-slider .tl-banner-caption{
+	padding: 50px 0;
+}
+.tl-heading-outer h2{
+	font-size: 24px;
+}
+.tl-price-info{
+	padding: 25px 20px;
+}
+.tl-price-info h3{
+	font-size: 18px;
+}
+ul.tl-featured-listed li{
+	width: 50%;
+}
+.tl-filterable-holder_v2 .tl-filterlist{
+  padding-right: 0px
+}
+.tl-tabs-holder .tl-filterOuter,.tl-filterable-holder .tl-filterOuter{
+	margin-left: 0;
+	margin-right: 0;
+}
+.tl-filterlist .tl-right-listed{
+	margin-top: 15px;
+}
+#tl-contact-map{
+	height: 300px;
+}
+#tl-grid-map .tl-searchouter_v2 .search-address-outer{
+	width: 75%;
+}
+.tl-recent-listed > li{
+	width: 100%;
+}
+.tl-properties-list-item .tl-text-holder{
+	padding: 20px;
+}
+.tl-team-services-info{
+	border: none;
+	text-align: left;
+}
+.tl-team-services-info{
+	padding: 15px;
+	padding-right: 40px;
+}
+.tl-p404-section{
+	padding: 100px 0;
+}
+.tl-p404-section h2{
+	font-size: 24px;
+}
+.tl-p404-section h2, .back-home{
+	margin-bottom: 15px;
+}
+#tl-header_v2 .tl-navigation-row .container-fluid > .row .col-md-2,
+#tl-header_v2 .tl-navigation-row .container-fluid > .row .col-md-10{
+	width: 100%;
+}
+#tl-header_v2 .tl-logo{
+	float: left;
+	text-align: center;
+}
+#tl-header_v2 .tl-logo a{
+	display: inline-block;
+}
+.tl-copyright-row{
+	text-align: center;
+}
+.tl-copyright-row p{
+	margin-bottom: 15px;
+}
+.tl-copyright-row .top-social-links{
+	width: 100%;
+}
+.tl-searchouter_v2 .search-address-outer{
+	min-width: 80%;
+	background-color: #fff;
+}
+.tl-searchouter_v2 .tl-search-form .tl-search-address{
+	width: 90%;
+}
+#tl-header_v2 .tl-nav-holder .navbar{
+	padding: 10px;
+}
+#tl-header_v2 .tl-nav-holder{
+	margin-top: -80px;
+}
+#tl-header_v2 .tl-nav-holder .tl-signup-btns{
+	margin-right: 15px;
+}
+#tl-header_v2 .tl-nav-holder .navbar-collapse .nav{
+	margin-top: 55px;
+}
+.tl-left_outer,.tl-right_outer{
+	width: 100%;
+}
+.tl-searchouter_v2 .top-social-links{
+	width: 100%;
+	text-align: center;
+	margin: 10px 0;
+}
+.tl-left_outer #tl-contact-map,
+.tl-left_outer #tl-contact-map.tl-location-map{
+	height: 300px;
+}
+
+
+
+}
+
+/*=================================================*/
+	/*For Tablet CSS*/
+/*================================================*/
+@media (min-width: 768px) and (max-width: 991px) {
+.tl-search-form .btn-search-submit{
+	padding: 17px 44px;
+}
+#tl-testimonial-slider{
+	padding: 0 50px;
+}
+.tl-filterable-holder_v2 .tl-filterlist{
+  padding-right: 0px
+}
+#tl-contact-map{
+	height: 400px;
+}
+.tl-recent-listed > li{
+	width: 100%;
+}
+.tl-team-services-info{
+	border: none;
+	text-align: left;
+}
+.tl-team-services-info{
+	padding: 0;
+	padding-right: 40px;
+}
+#tl-header_v2 .tl-navigation-row .container-fluid > .row .col-md-2,
+#tl-header_v2 .tl-navigation-row .container-fluid > .row .col-md-10{
+	width: 100%;
+}
+#tl-header_v2 .tl-logo{
+	float: none;
+	display: block;
+	text-align: center;
+}
+#tl-header_v2 .tl-logo a{
+	display: inline-block;
+}
+.tl-left_outer,.tl-right_outer{
+	width: 100%;
+}
+.tl-left_outer #tl-contact-map,
+.tl-left_outer #tl-contact-map.tl-location-map{
+	height: 300px;
+}
+
+
+
+}
+
+@media (min-width: 992px) {
+
+.tl-team-inner-holder .row > .col-md-2{
+  width: 18.667%;
+  padding-right: 0;
+}
+.tl-team-inner-holder .row > .col-md-4{
+  width: 31.3333%
+}
+
+
+
+
+}
+/*=================================================*/
+	/*768px And 1040px CSS*/
+/*================================================*/
+@media (min-width: 768px) and (max-width: 1040px) {
+
+.tl-nav-holder .navbar-default .navbar-nav > li{
+	padding: 0 10px;
+}
+.tl-nav-holder .navbar-default .navbar-nav > li > a{
+	font-size: 14px;
+}
+.parallax-btn{
+	padding: 10px 20px;
+}
+.tl-properties-item .tl-text-holder{
+	padding: 20px 10px;
+}
+.tl-properties-item .tl-text-holder h4{
+	font-size: 13px;
+	font-weight: 600;
+}
+.parallax-info h3{
+	font-size: 20px;
+	line-height: 24px;
+	margin-bottom: 8px;
+}
+.tl-call-to-action-section h3{
+	font-size: 20px;
+}
+.tl-search-section{
+	padding: 100px 0;
+	background-repeat: no-repeat;
+}
+#tl-header_v3 .tl-nav-holder .navbar{
+	padding-left: 0;
+	padding-right: 5px;
+}
+#tl-banner-slider .tl-banner-caption{
+	padding-top: 140px;
+}
+#tl-grid-map .tl-searchouter_v2 .search-address-outer{
+	width: 80%;
+}
+
+
+
+
+}
+
+
+@media (max-width: 1199px) {
+
+.tl-search-form .tl-search-address{
+	min-width: 200px;
+}
+.tl-dropdown-outer{
+	min-width: 55px;
+}
+
+
+}
+
+
+/*===========================================*/
+	/*1200px CSS*/
+/*===========================================*/
+@media (min-width: 1200px) {
+
+.tl-search-form .tl-search-address{
+	min-width: 400px;
+}
+.tl-search-bar-holder .tl-search-form .tl-dropdown-outer,
+.tl-searchouter_v2 .tl-search-form .tl-dropdown-outer{
+	min-width: 124px;
+}
+.tl-searchouter_v2 .tl-search-form .tl-search-address{
+	min-width: 230px;
+
+}
+
+
+}
+
+
+
+/*===========================================*/
+	/*1400px CSS*/
+/*===========================================*/
+@media (min-width: 1400px) {
+
+#tl-header_v2 .tl-navigation-row .container-fluid > .row .col-md-2{
+	width: 16%;
+}
+#tl-header_v2 .tl-navigation-row .container-fluid > .row .col-md-10{
+	width: 84%;
+}
+.tl-searchouter_v2{
+	padding: 9px 10px;
+}
+.tl-left_outer{
+	width: 55%;
+}
+.tl-right_outer{
+	width: 45%;
+}
+.tl-modal-holder{
+	padding-top: 250px;
+}
+
+
+
+}
+
+
+
+
