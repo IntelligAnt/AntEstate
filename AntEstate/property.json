@@ -1,17 +1,19 @@
 {
 	"id": 1,
 	"type": 0,
-	"name": "Pera",
+	"name": "Perin stan",
 	"description": "Dramatic & urban condo",
-	"address": {
+	"location": {
 		"city": "Cajetina",
-		"street": "Perina",
-		"no": 1
-	}
+		"address": "Perina 1",
+		"coordinates": [32.30642, -122.61458]
+	},
 	"info": {
+		"rooms": 2.5,
 		"beds": 2,
 		"parking": true,
-		"heating": "ludo"
+		"heating": "ludo",
+		// ...
 	},
 	"area": 27.3,
 	"price": 1000.43,
@@ -20,5 +22,7 @@
 		"email": "pera@whitehouse.gov"
 	},
 	"photos": ["img/Pera/kupatilo.png", "img/Pera/sudopera.png"],
-	"videos": []
+	"videos": [],
+	"views": 10,
+	"tours": 2
 }
