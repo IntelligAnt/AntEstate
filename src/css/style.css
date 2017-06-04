@@ -914,14 +914,19 @@ body{
   border-radius: 5px;
   background-color: #fff;
 }
-.tl-search-form .tl-search-address{
+.tl-search-form .tl-search-field{
   font-size: 14px;
   float: left;
-  min-width: 200px;
   color: #a0a0a0;
   border: none;
   padding: 20px 16px 12px;
   border-right: 1px solid #e2e2e2;
+}
+.tl-search-form .tl-search-address{
+  min-width: 200px;
+}
+.tl-search-form .tl-search-area{
+  min-width: 25px;
 }
 .tl-search-form .btn-search-submit{
   font-size: 16px;
