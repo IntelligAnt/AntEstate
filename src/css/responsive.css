@@ -34,6 +34,9 @@ header#tl-header_v2 .tl-navigation-row .tl-nav-holder{
 .tl-search-form .tl-search-address{
 	width: 100%;
 }
+.tl-search-form .tl-minmax{
+	width: 100%;
+}
 .tl-search-form .btn-search-submit{
 	width: 100%;
 	text-align: center;

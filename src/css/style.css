@@ -836,40 +836,40 @@ body{
   float: left;
   width: 100%;
 }
-.tl-accordion-holder {
+.tl-accordian-holder {
   float: left;
   width: 100%;
   margin: 0 0 20px 0;
 }
-.tl-accordion-holder h3,.tl-video-box h3{
+.tl-accordian-holder h3,.tl-video-box h3{
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 25px;
 }
-.tl-accordion-holder .panel{
+.tl-accordian-holder .panel{
   border: 1px solid #e2e2e2;
   background-color: transparent;
 }
-.tl-accordion-holder #accordion h4{
+.tl-accordian-holder #accordion h4{
   font-size: 14px;
   font-weight: 600;
   color: #0b2b5a;
 }
-.tl-accordion-holder #accordion h4 a{
+.tl-accordian-holder #accordion h4 a{
   color: #0b2b5a;
 }
-.tl-accordion-holder .panel-default .panel-heading{
+.tl-accordian-holder .panel-default .panel-heading{
   padding: 17px 25px;
 }
-.tl-accordion-holder .panel-default .panel-heading:hover h4 a,
-.tl-accordion-holder #accordion h4 a:hover,.tl-accordion-holder #accordion .panel-heading:hover a{
+.tl-accordian-holder .panel-default .panel-heading:hover h4 a,
+.tl-accordian-holder #accordion h4 a:hover,.tl-accordian-holder #accordion .panel-heading:hover a{
   color: #fff;
 }
-.tl-accordion-holder .panel .panel-body,.tl-accordion-holder #accordion .panel-body{
+.tl-accordian-holder .panel .panel-body,.tl-accordian-holder #accordion .panel-body{
   padding: 23px 25px;
   border: none;
 }
-.tl-accordion-holder .panel-default{
+.tl-accordian-holder .panel-default{
   font-size: 15px;
   line-height: 24px;
   color: #656565;
@@ -925,8 +925,17 @@ body{
 .tl-search-form .tl-search-address{
   min-width: 200px;
 }
-.tl-search-form .tl-search-area{
-  min-width: 25px;
+.tl-search-form .tl-minmax-wrapper{
+  float: left;
+  position: relative;
+  width: 517px;
+}
+.tl-search-form .tl-minmax-wrapper .tl-minmax{
+  float: left;
+  width: 50%;
+}
+.tl-minmax-elem {
+  width: 50%;
 }
 .tl-search-form .btn-search-submit{
   font-size: 16px;
@@ -942,7 +951,7 @@ body{
   width: 110px;
   height: 55px;
   line-height: 55px;
-  padding: 0px 7px;
+  padding: 0px 15px;
   float: left;
   color: #030303;
   border: none;
