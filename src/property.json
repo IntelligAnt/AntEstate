@@ -1,28 +1,68 @@
-{
-	"id": 1,
-	"type": 0,
-	"name": "Perin stan",
-	"description": "Dramatic & urban condo",
-	"location": {
-		"city": "Cajetina",
-		"address": "Perina 1",
-		"coordinates": [32.30642, -122.61458]
-	},
-	"info": {
-		"rooms": 2.5,
-		"beds": 2,
-		"parking": true,
-		"heating": "ludo",
-		// ...
-	},
-	"area": 27.3,
-	"price": 1000.43,
-	"contact": {
-		"phone": "123",
-		"email": "pera@whitehouse.gov"
-	},
-	"photos": ["img/Pera/kupatilo.png", "img/Pera/sudopera.png"],
-	"videos": [],
-	"views": 10,
-	"tours": 2
-}
+[
+  {
+    "id": 1,
+    "type": 0,
+    "name": "Perin stan",
+    "description": "Dramatic & urban condo",
+    "location": {
+      "city": "Cajetina",
+      "address": "Perina 1",
+      "coordinates": [
+        32.30642,
+        -122.61458
+      ]
+    },
+    "info": {
+      "rooms": 1,
+      "beds": 2,
+      "parking": true,
+      "heating": "0"
+    },
+    "area": 40,
+    "price": 500,
+    "contact": {
+      "phone": "123",
+      "email": "pera@whitehouse.gov"
+    },
+    "photos": [
+      "images/properties-md-img-01.jpg",
+      "img/Pera/sudopera.png"
+    ],
+    "videos": [],
+    "views": 10,
+    "tours": 2
+  },
+  {
+    "id": 2,
+    "type": 0,
+    "name": "Drugi stan",
+    "description": "Dramatic & urban condo",
+    "location": {
+      "city": "Cajetina",
+      "address": "Perina 1",
+      "coordinates": [
+        32.30642,
+        -122.61458
+      ]
+    },
+    "info": {
+      "rooms": 2.5,
+      "beds": 2,
+      "parking": false,
+      "heating": "1"
+    },
+    "area": 27.3,
+    "price": 1000.43,
+    "contact": {
+      "phone": "123",
+      "email": "pera@whitehouse.gov"
+    },
+    "photos": [
+      "images/properties-md-img-02.jpg",
+      "img/Pera/sudopera.png"
+    ],
+    "videos": [],
+    "views": 10,
+    "tours": 2
+  }
+]
