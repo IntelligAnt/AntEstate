@@ -836,40 +836,40 @@ body{
   float: left;
   width: 100%;
 }
-.tl-accordian-holder {
+.tl-accordion-holder {
   float: left;
   width: 100%;
   margin: 0 0 20px 0;
 }
-.tl-accordian-holder h3,.tl-video-box h3{
+.tl-accordion-holder h3,.tl-video-box h3{
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 25px;
 }
-.tl-accordian-holder .panel{
+.tl-accordion-holder .panel{
   border: 1px solid #e2e2e2;
   background-color: transparent;
 }
-.tl-accordian-holder #accordion h4{
+.tl-accordion-holder #accordion h4{
   font-size: 14px;
   font-weight: 600;
   color: #0b2b5a;
 }
-.tl-accordian-holder #accordion h4 a{
+.tl-accordion-holder #accordion h4 a{
   color: #0b2b5a;
 }
-.tl-accordian-holder .panel-default .panel-heading{
+.tl-accordion-holder .panel-default .panel-heading{
   padding: 17px 25px;
 }
-.tl-accordian-holder .panel-default .panel-heading:hover h4 a,
-.tl-accordian-holder #accordion h4 a:hover,.tl-accordian-holder #accordion .panel-heading:hover a{
+.tl-accordion-holder .panel-default .panel-heading:hover h4 a,
+.tl-accordion-holder #accordion h4 a:hover,.tl-accordion-holder #accordion .panel-heading:hover a{
   color: #fff;
 }
-.tl-accordian-holder .panel .panel-body,.tl-accordian-holder #accordion .panel-body{
+.tl-accordion-holder .panel .panel-body,.tl-accordion-holder #accordion .panel-body{
   padding: 23px 25px;
   border: none;
 }
-.tl-accordian-holder .panel-default{
+.tl-accordion-holder .panel-default{
   font-size: 15px;
   line-height: 24px;
   color: #656565;
