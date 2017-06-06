@@ -142,7 +142,7 @@ jQuery(document).ready(function($) {
         });
     }
 
-    /* Accordian For About Page
+    /* Accordion For About Page
     ======================================================*/ 
     if ($('#myCollapsible').length) {
         $('#myCollapsible').collapse({
