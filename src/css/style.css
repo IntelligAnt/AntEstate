@@ -1435,30 +1435,30 @@ body{
 .tl-properties-info .tl-featured-listed{
   margin-bottom: 40px;
 }
-.tl-adiltional-inforamtion{
+.tl-additional-information{
   float: left;
   width: 100%;
   margin-bottom: 20px;
 }
-.tl-adiltional-box{
+.tl-additional-box{
   float: left;
   width: 100%;
   margin-bottom: 30px;
 }
-.tl-adiltional-box h4{
+.tl-additional-box h4{
   font-size: 15px;
   font-weight: 600;
   margin-bottom: 18px;
 }
-.tl-adiltional-box h4 .fa{
+.tl-additional-box h4 .fa{
   font-size: 14px;
   margin-right: 12px;
 }
-.tl-adiltional-listed{
+.tl-additional-listed{
   float: left;
   width: 100%;
 }
-.tl-adiltional-listed li{
+.tl-additional-listed li{
   font-size: 15px;
   font-weight: 600;
   color: #656565;
@@ -1466,16 +1466,16 @@ body{
   width: 100%;
   margin-bottom: 30px;
 }
-.tl-adiltional-listed li:last-child{
+.tl-additional-listed li:last-child{
   margin-bottom: 0;
 }
-.tl-adiltional-listed li span{
+.tl-additional-listed li span{
   font-size: 12px;
   color: #a5a5a5;
   display: block;
   padding-bottom: 5px;
 }
-.tl-adiltional-listed li p{
+.tl-additional-listed li p{
   margin-bottom: 0;
 }
 /*================================================================*/
