@@ -20,6 +20,7 @@
     },
     "area": 40,
     "price": 500,
+    "date": 1493596800,
     "contact": {
       "phone": "123",
       "email": "pera@whitehouse.gov"
@@ -53,6 +54,7 @@
     },
     "area": 27.3,
     "price": 1000.43,
+    "date": 1493697800,
     "contact": {
       "phone": "123",
       "email": "pera@whitehouse.gov"

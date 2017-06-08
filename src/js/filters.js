@@ -60,7 +60,8 @@ function pack_to_string(filters) {
 function extract_from_url() {
     var url = document.location.href;
     var splitedUrl = url.split('?');
-    var data = splitedUrl[splitedUrl.length - 1];
+    if (splitedUrl.length < 2) return {};
+    var data = splitedUrl[1];
     return extract_from_string(data);
 }
 
