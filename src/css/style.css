@@ -918,21 +918,17 @@ body{
   font-size: 14px;
   float: left;
   color: #a0a0a0;
+  padding: 18px;
   border: none;
-  padding: 20px 16px 12px;
-  border-right: 1px solid #e2e2e2;
+  border-left: 1px solid #e2e2e2;
 }
 .tl-search-form .tl-search-address{
   min-width: 200px;
 }
-.tl-search-form .tl-minmax-wrapper{
+.tl-search-form .tl-minmax{
   float: left;
   position: relative;
-  width: 517px;
-}
-.tl-search-form .tl-minmax-wrapper .tl-minmax{
-  float: left;
-  width: 50%;
+  max-width: 250px;
 }
 .tl-minmax-elem {
   width: 50%;
@@ -957,11 +953,7 @@ body{
   border: none;
   position: relative;
   border-radius: 5px 0px 0px 5px;
-  border-right: 1px solid #e2e2e2;
   background-color: transparent;
-}
-.tl-search-section .dropdown.tl-dropdown-outer:nth-child(6){
-  border-right: none;
 }
 .tl-dropdown-outer:focus{
   outline: none;

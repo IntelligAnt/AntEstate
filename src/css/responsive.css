@@ -3,6 +3,11 @@
 	/*360px CSS*/
 /*=========================================*/
 @media (max-width: 360px) {
+
+.tl-search-form .tl-search-address{
+	min-width: 0 !important;
+}
+
 .tl-call-to-action-section h3 .fa{
 	display: block;
 	margin: 0 0 15px;
@@ -19,6 +24,15 @@ header#tl-header_v2 .tl-navigation-row .tl-nav-holder{
 
 }
 
+@media (max-width: 430px) {
+
+.tl-search-form .tl-minmax{
+	width: 100%; 
+	max-width: none !important;
+}
+
+}
+
 /*==========================================*/
 	/*480px CSS*/
 /*=========================================*/
@@ -31,16 +45,20 @@ header#tl-header_v2 .tl-navigation-row .tl-nav-holder{
 	width: 100%;
 	text-align: center;
 }
+/*.tl-search-form .tl-search-field{
+	border-top: 1px solid #e2e2e2;
+}*/
 .tl-search-form .tl-search-address{
 	width: 100%;
 }
 .tl-search-form .tl-minmax{
 	width: 100%;
+	max-width: none;
 }
 .tl-search-form .btn-search-submit{
 	width: 100%;
 	text-align: center;
-	border-radius: 0;
+	border-radius: 0 0 5px 5px;
 }
 #tl-banner-slider .tl-sider-item .tl-banner-caption{
 	padding: 10px 0 0;
@@ -490,7 +508,10 @@ ul.tl-featured-listed li{
 @media (max-width: 1199px) {
 
 .tl-search-form .tl-search-address{
-	min-width: 200px;
+	min-width: 300px;
+}
+.tl-search-form .tl-minmax{
+	max-width: 200px;
 }
 .tl-dropdown-outer{
 	min-width: 55px;
