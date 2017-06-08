@@ -348,99 +348,10 @@
 												</div>
 											</div><!--Drop Down End-->
 
-											<button class="btn-search-submit" type="submit">Search Properties</button>
+											<button class="btn-search-submit" type="button" onclick="filterClick()">
+												Search Properties
+											</button>
 										</form><!--Advance Search Form End-->
-									</div><!--Widget Holder End-->
-
-									<!--Widget Holder Start-->
-									<div class="widget widget-recent">
-										<h3>Recent For Sale</h3>
-										<ul class="tl-recent-listed">
-											<li>
-												<!--Properties Box Start-->
-												<div class="tl-properties-item">
-													<figure class="tl-properties-thumb">
-														<img src="images/recent-sm-img-01.jpg" alt="">
-														<figcaption class="tl-caption">
-															<div class="bottom-text">
-																<h5>$1,298,000</h5>
-															</div>
-														</figcaption>
-													</figure>
-													<!--Text Holder Start-->
-													<div class="tl-text-holder">
-														<h4><a href="#">Luxury Appartments</a></h4>
-														<ul class="tl-meta-listed">
-															<li>866 Lewis Ave, Sunnyvale, </li>
-															<li>CA 94086 </li>
-														</ul>
-													</div><!--Text Holder End-->
-												</div><!--Properties Box End-->
-											</li>
-											<li>
-												<!--Properties Box Start-->
-												<div class="tl-properties-item">
-													<figure class="tl-properties-thumb">
-														<img src="images/recent-sm-img-02.jpg" alt="">
-														<figcaption class="tl-caption">
-															<div class="bottom-text">
-																<h5>$2,128,000</h5>
-															</div>
-														</figcaption>
-													</figure>
-													<!--Text Holder Start-->
-													<div class="tl-text-holder">
-														<h4><a href="#">Amazing Townhouse</a></h4>
-														<ul class="tl-meta-listed">
-															<li>7 Sutton Sq, New York, </li>
-															<li>CNY 10022 </li>
-														</ul>
-													</div><!--Text Holder End-->
-												</div><!--Properties Box End-->
-											</li>
-											<li>
-												<!--Properties Box Start-->
-												<div class="tl-properties-item">
-													<figure class="tl-properties-thumb">
-														<img src="images/recent-sm-img-03.jpg" alt="">
-														<figcaption class="tl-caption">
-															<div class="bottom-text">
-																<h5>$55,75,000</h5>
-															</div>
-														</figcaption>
-													</figure>
-													<!--Text Holder Start-->
-													<div class="tl-text-holder">
-														<h4><a href="#">Magnificent CO-OP</a></h4>
-														<ul class="tl-meta-listed">
-															<li>2 E 67th St FL 5, New York, </li>
-															<li>NY 10065</li>
-														</ul>
-													</div><!--Text Holder End-->
-												</div><!--Properties Box End-->
-											</li>
-											<li>
-												<!--Properties Box Start-->
-												<div class="tl-properties-item">
-													<figure class="tl-properties-thumb">
-														<img src="images/recent-sm-img-04.jpg" alt="">
-														<figcaption class="tl-caption">
-															<div class="bottom-text">
-																<h5>$40,228,000</h5>
-															</div>
-														</figcaption>
-													</figure>
-													<!--Text Holder Start-->
-													<div class="tl-text-holder">
-														<h4><a href="#">Traditional Condo</a></h4>
-														<ul class="tl-meta-listed">
-															<li>432 Park Ave # PH91A, </li>
-															<li>New York, NY 10022 </li>
-														</ul>
-													</div><!--Text Holder End-->
-												</div><!--Properties Box End-->
-											</li>
-										</ul>
 									</div><!--Widget Holder End-->
 
 									<!--Widget Holder Start-->
@@ -458,21 +369,6 @@
 										</ul>
 									</div><!--Widget Holder End-->
 
-									<!--Widget Holder Start-->
-									<div class="widget widget-categories">
-										<div class="tl-categories-banner">
-											<img src="images/categories-img-01.jpg" alt="">
-											<strong><a href="#">Most Expensive</a></strong>
-										</div>
-										<div class="tl-categories-banner">
-											<img src="images/categories-img-02.jpg" alt="">
-											<strong><a href="#">Open Houses</a></strong>
-										</div>
-										<div class="tl-categories-banner">
-											<img src="images/categories-img-03.jpg" alt="">
-											<strong><a href="#">New to Market</a></strong>
-										</div>
-									</div><!--Widget Holder End-->
 								</aside><!--Sidebar Outer End-->
 							</div>
 
@@ -481,23 +377,23 @@
 								<div class="tl-filterable-holder tl-filterable-holder_v2">
 									<!--Filterable List Start-->
 									<div class="tl-filterlist">
-										<a href="#" data-filter="*" class="current">Newest</a>
-										<a href="#" data-filter=".tl-item2">Cheapest</a>
+										<a href="" onclick="sortClick(2)" class="current">Newest</a>
+										<a href="" onclick="sortClick(0)">Cheapest</a>
 										<div class="tl-morefilter">
 											<span class="more-filters">More Filters <i class="fa fa-angle-down" aria-hidden="true"></i></span>
 											<ul class="tl-filter-dropdown" id="filter-dropdown">
 												<li>
-													<a href="#" data-filter=".tl-item3">Oldest</a>
+													<a href="" onclick="sortClick(3)">Oldest</a>
 												</li>
 												<li>
-													<a href="#" data-filter=".tl-item4">Cheapest</a>
+													<a href="" onclick="sortClick(1)">The most expensive</a>
 												</li>
 												<li>
-													<a href="#" data-filter=".tl-item5">Newest</a>
+													<a href="" onclick="sortClick(4)">Default</a>
 												</li>
 											</ul>
 										</div>
-										<span class="found-pages">75 homes found in Manhattan, NY</span>
+										<span class="found-pages" id="number-of-results"></span>
 									</div><!--Filterable List End-->
 
 									<!--Filterable Outer Start-->
@@ -619,6 +515,7 @@
 		<script src="js/handlebars-v4.0.10.js"></script>
 		<script src="js/custom.js"></script>
 		<script src="js/filters.js"></script>
+		<script src="js/sort.js"></script>
 
 		<script id="entry-template" type="text/x-handlebars-template">
 			<div class="col-md-6 col-sm-6 col-xs-12">
@@ -656,8 +553,10 @@
 		<script>
 
             function showFilteredData(data) {
+                document.querySelector("#number-of-results").innerHTML = data.length + " results found";
                 var templateSource = document.querySelector("#entry-template").innerHTML;
                 var compiledTemplate = Handlebars.compile(templateSource);
+                document.querySelector("#grid-view-parent").innerHTML = "";
                 for (var property in data) {
                     document.querySelector("#grid-view-parent").innerHTML += compiledTemplate(data[property]);
                 }
@@ -674,8 +573,8 @@
                 parking: false,
                 heating0: true,
                 heating1: true,
-                heating2: true
-
+                heating2: true,
+                sort: 4
             };
             var urlFilters = extract_from_url();
 
@@ -683,10 +582,25 @@
             for (var attribute in urlFilters) {
                 filters[attribute] = urlFilters[attribute];
             }
-            $.get("property.json", function (data) {
-                var filteredData = filter(data, filters);
-                showFilteredData(filteredData);
-            });
+            var filteredData = [];
+            applyFilters();
+
+            function sortClick(type) {
+                showFilteredData(sort(filteredData, type));
+                filters.sort = type;
+            }
+
+            function applyFilters() {
+                $.get("property.json", function (data) {
+                    filteredData = sort(filter(data, filters), filters.sort);
+                    showFilteredData(filteredData);
+                });
+            }
+
+            function filterClick() {
+                //filters = ...
+                applyFilters();
+            }
 		</script>
     
    </body>
