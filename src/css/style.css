@@ -914,14 +914,24 @@ body{
   border-radius: 5px;
   background-color: #fff;
 }
-.tl-search-form .tl-search-address{
+.tl-search-form .tl-search-field{
   font-size: 14px;
   float: left;
-  min-width: 200px;
   color: #a0a0a0;
+  padding: 18px;
   border: none;
-  padding: 20px 16px 12px;
-  border-right: 1px solid #e2e2e2;
+  border-left: 1px solid #e2e2e2;
+}
+.tl-search-form .tl-search-address{
+  min-width: 200px;
+}
+.tl-search-form .tl-minmax{
+  float: left;
+  position: relative;
+  max-width: 250px;
+}
+.tl-minmax-elem {
+  width: 50%;
 }
 .tl-search-form .btn-search-submit{
   font-size: 16px;
@@ -937,17 +947,13 @@ body{
   width: 110px;
   height: 55px;
   line-height: 55px;
-  padding: 0px 7px;
+  padding: 0px 15px;
   float: left;
   color: #030303;
   border: none;
   position: relative;
   border-radius: 5px 0px 0px 5px;
-  border-right: 1px solid #e2e2e2;
   background-color: transparent;
-}
-.tl-search-section .dropdown.tl-dropdown-outer:nth-child(6){
-  border-right: none;
 }
 .tl-dropdown-outer:focus{
   outline: none;
@@ -1421,30 +1427,30 @@ body{
 .tl-properties-info .tl-featured-listed{
   margin-bottom: 40px;
 }
-.tl-adiltional-inforamtion{
+.tl-additional-information{
   float: left;
   width: 100%;
   margin-bottom: 20px;
 }
-.tl-adiltional-box{
+.tl-additional-box{
   float: left;
   width: 100%;
   margin-bottom: 30px;
 }
-.tl-adiltional-box h4{
+.tl-additional-box h4{
   font-size: 15px;
   font-weight: 600;
   margin-bottom: 18px;
 }
-.tl-adiltional-box h4 .fa{
+.tl-additional-box h4 .fa{
   font-size: 14px;
   margin-right: 12px;
 }
-.tl-adiltional-listed{
+.tl-additional-listed{
   float: left;
   width: 100%;
 }
-.tl-adiltional-listed li{
+.tl-additional-listed li{
   font-size: 15px;
   font-weight: 600;
   color: #656565;
@@ -1452,16 +1458,16 @@ body{
   width: 100%;
   margin-bottom: 30px;
 }
-.tl-adiltional-listed li:last-child{
+.tl-additional-listed li:last-child{
   margin-bottom: 0;
 }
-.tl-adiltional-listed li span{
+.tl-additional-listed li span{
   font-size: 12px;
   color: #a5a5a5;
   display: block;
   padding-bottom: 5px;
 }
-.tl-adiltional-listed li p{
+.tl-additional-listed li p{
   margin-bottom: 0;
 }
 /*================================================================*/
