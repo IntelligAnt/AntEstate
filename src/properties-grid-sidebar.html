@@ -354,6 +354,15 @@
 										</form><!--Advance Search Form End-->
 									</div><!--Widget Holder End-->
 
+                                    <!--Widget Start-->
+                                    <div class="widget widget-add">
+                                        <figure class="add-thumb">
+                                            <a href="#">
+                                                <img src="images/add-img.jpg" alt="">
+                                            </a>
+                                        </figure>
+                                    </div><!--Widget End-->
+
 									<!--Widget Holder Start-->
 									<div class="widget widget-about">
 										<h3>Contact Us</h3>
@@ -530,8 +539,11 @@
 								</a>
 							</div>
 							<div class="bottom-text">
-								<h3>{{price}} EUR/mo</h3>
+                                <h3>{{price}} EUR</h3>
 								<span>{{name}}</span>
+                                {{#location}}
+                                <span>{{address}}, {{city}}</span>
+                                {{/location}}
 							</div>
 						</figcaption>
 					</figure>
@@ -564,6 +576,7 @@
 
             var defaultFilters = {
                 type: 0,
+                sellType: 0,
                 min_price: 0,
                 max_price: Number.MAX_VALUE,
                 min_area: 0,
@@ -574,6 +587,7 @@
                 heating0: true,
                 heating1: true,
                 heating2: true,
+                city: "*",
                 sort: 4
             };
             var urlFilters = extract_from_url();
