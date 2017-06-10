@@ -13,6 +13,7 @@
 		<link href="css/theme-color.css" rel="stylesheet">
 		<link href="css/owl.carousel.css" rel="stylesheet">
 		<link href="css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/grid-sidebar.css">
 
 		<!-- Css Files End -->
 		<!--[if lt IE 9]>
@@ -531,7 +532,9 @@
 				<!--Properties Box Start-->
 				<div class="tl-properties-item">
 					<figure class="tl-properties-thumb">
-						<img src="{{photos.[0]}}" alt="">
+						<div class="entry-img-container">
+							<img src="{{photos.[0]}}" alt="" style="height: 100%">
+						</div>
 						<figcaption class="tl-caption">
 							<div class="top-text">
 								<a href="#" class="like-btn">
@@ -540,7 +543,6 @@
 							</div>
 							<div class="bottom-text">
                                 <h3>{{price}} EUR</h3>
-								<span>{{name}}</span>
                                 {{#location}}
                                 <span>{{address}}, {{city}}</span>
                                 {{/location}}

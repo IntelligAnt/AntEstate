@@ -6,18 +6,35 @@
     "name": "Perin stan",
     "description": "Dramatic & urban condo",
     "location": {
-      "city": "Cajetina",
+      "city": "Beograd",
       "address": "Perina 1",
       "coordinates": [
         32.30642,
         -122.61458
-      ]
+      ],
+      "map": "images/map-example.JPG"
     },
     "info": {
+      "text": "This spectacular full floor, 8,255 square foot sprawling penthouse includes six bedrooms, seven bathrooms, library with wood-burning fireplace and two powder rooms. North, South, East, and West exposures provide panoramic views of Central Park and the City",
+      "features": [
+        "Fitness",
+        "Center",
+        "Doorman",
+        "View: Park",
+        "Fireplace",
+        "Garden"
+      ],
       "rooms": 1,
       "beds": 2,
       "parking": true,
-      "heating": "0"
+      "heating": "0",
+      "building": {
+        "elevator": true,
+        "intercom": true,
+        "cameras": false,
+        "security": false,
+        "wheelchair": true
+      }
     },
     "area": 40,
     "price": 500,
@@ -28,7 +45,8 @@
     },
     "photos": [
       "images/properties-md-img-01.jpg",
-      "img/Pera/sudopera.png"
+      "images/properties-md-img-03.jpg",
+      "images/properties-md-img-04.jpg"
     ],
     "videos": [],
     "views": 10,
@@ -46,13 +64,31 @@
       "coordinates": [
         32.30642,
         -122.61458
-      ]
+      ],
+      "map": "images/map-example.JPG"
     },
     "info": {
+      "text": "This spectacular full floor, 8,255 square foot sprawling penthouse includes six bedrooms, seven bathrooms, library with wood-burning fireplace and two powder rooms. North, South, East, and West exposures provide panoramic views of Central Park and the City",
+      "features": [
+        "Fitness",
+        "Center",
+        "Doorman",
+        "View: Park",
+        "Built in 2015",
+        "Fireplace",
+        "Garden"
+      ],
       "rooms": 2.5,
       "beds": 2,
       "parking": false,
-      "heating": "1"
+      "heating": "1",
+      "building": {
+        "elevator": true,
+        "intercom": true,
+        "cameras": false,
+        "security": false,
+        "wheelchair": true
+      }
     },
     "area": 27.3,
     "price": 1000.43,
@@ -62,8 +98,9 @@
       "email": "pera@whitehouse.gov"
     },
     "photos": [
+      "images/properties-single-img-01.jpg",
       "images/properties-md-img-02.jpg",
-      "img/Pera/sudopera.png"
+      "images/properties-md-img-03.jpg"
     ],
     "videos": [],
     "views": 10,
