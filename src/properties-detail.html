@@ -13,6 +13,9 @@
 		<link href="css/theme-color.css" rel="stylesheet">
 		<link href="css/owl.carousel.css" rel="stylesheet">
 		<link href="css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/responsive.css">
+
+        <link rel="stylesheet" href="css/lightbox2.min.css">
 
 		<!-- Css Files End -->
 		<!--[if lt IE 9]>
@@ -277,29 +280,44 @@
 	    
 	    	<!--Main Content Start-->
 	    	<div class="tl-main-content">
-				
+
 				<!--Properties Section Start-->
 				<section class="tl-properties-section pd-tb-80">
 					<div class="container">
+
+                        <!--<ul class="rslides">-->
+                        <!--<li><img src="images/properties-single-img-01.jpg" alt=""></li>-->
+                        <!--<li><img src="images/properties-single-img-sm-01.jpg" alt=""></li>-->
+                        <!--<li><img src="images/properties-single-img-sm-01.jpg" alt=""></li>-->
+                        <!--</ul>-->
+
 						<div class="row">
 							<div class="col-md-12 col-sm-12 col-xs-12">
 								<div class="tl-properties-gallery">
 									<div class="col-md-8 col-sm-8 col-xs-12">
 										<figure class="properties-thumb">
-											<img src="images/properties-single-img-01.jpg" alt="">
+                                            <a href="images/properties-single-img-01.jpg" data-lightbox="property-set">
+                                                <img src="images/properties-single-img-01.jpg" alt="">
+                                            </a>
 										</figure>
 									</div>
 									<div class="col-sm-4 col-sm-4 col-xs-12">
 										<figure class="properties-thumb">
-											<img src="images/properties-single-img-sm-01.jpg" alt="">
+                                            <a href="images/properties-single-img-sm-01.jpg" alt=""
+                                               data-lightbox="property-set">
+                                                <img src="images/properties-single-img-sm-01.jpg" alt="">
+                                            </a>
 										</figure>
 										<figure class="properties-thumb">
-											<img src="images/properties-single-img-sm-01.jpg" alt="">
+                                            <a href="images/properties-single-img-sm-01.jpg" alt=""
+                                               data-lightbox="property-set">
+                                                <img src="images/properties-single-img-sm-01.jpg" alt="">
+                                            </a>
 										</figure>
 									</div>
 								</div>
 							</div>
-							
+
 							<div class="col-md-8 col-sm-8 col-xs-12">
 								<!--Properties Info Start-->
 								<div class="tl-properties-info">
@@ -575,15 +593,47 @@
 
 		<!-- Js Files Start --> 
 		<script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/lightbox2.min.js"></script>
 		<script src="js/bootstrap.min.js"></script> 
 		<script src="js/migrate.js"></script>  
 		<script src="js/owl.carousel.min.js"></script>
 		<script src="js/imagesloaded.pkgd.js"></script>
-    	<script src="js/isotope.pkgd.min.js"></script> 
-    	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-		<script src="js/map.js"></script> 
+    	<script src="js/isotope.pkgd.min.js"></script>
+        <!--<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>-->
+        <!--<script src="js/map.js"></script>-->
 		<script src="js/custom.js"></script>
 
-    
-   </body>
+        <script id="property-template" type="text/x-handlebars-template">
+        </script>
+
+        <script>
+
+            function getId() {
+                var url = document.location.href;
+                var splitedUrl = url.split('?');
+                if (splitedUrl.length < 2) window.location = "p404.html";
+                return splitedUrl[1];
+            }
+
+            function showProperty(property) {
+
+            }
+
+            lightbox.option({
+                'resizeDuration': 200,
+                'wrapAround': true
+            })
+
+            var id = getId();
+            $.get("property.json", function (data) {
+                var property = data.find(function (e) {
+                    return e.id == id;
+                });
+                if (property === undefined) window.location = "p404.html";
+                showProperty(property);
+            });
+
+        </script>
+
+    </body>
 </html>
