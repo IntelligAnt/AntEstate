@@ -2,6 +2,7 @@
   {
     "id": 1,
     "type": 0,
+    "sellType": 0,
     "name": "Perin stan",
     "description": "Dramatic & urban condo",
     "location": {
@@ -36,6 +37,7 @@
   {
     "id": 2,
     "type": 0,
+    "sellType": 0,
     "name": "Drugi stan",
     "description": "Dramatic & urban condo",
     "location": {

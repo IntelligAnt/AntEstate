@@ -15,14 +15,21 @@ function check_heating(h, filters) {
     }
 }
 
+function check_city(city, filter) {
+    if (filter === "*") return true;
+    return filter === city;
+}
+
 function filter(data, filters) {
     return data.filter(function (e) {
         return e.type == filters.type
+            && e.sellType == filters.sellType
             && is_in_range(e.price, filters.min_price, filters.max_price)
             && is_in_range(e.area, filters.min_area, filters.max_area)
             && is_in_range(e.info.rooms, filters.min_rooms, filters.max_rooms)
             && (!filters.parking || e.info.parking)
-            && check_heating(e.info.heating, filters);
+            && check_heating(e.info.heating, filters)
+            && check_city(e.location.city, filters.city);
     });
 }
 
