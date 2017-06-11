@@ -445,7 +445,11 @@
 				</div><!--CopyRight Row End-->
 	    	</footer><!--Footer Content End-->
 
-	    </div>
+            <div class="hidden-images">
+
+            </div>
+
+        </div>
 	    <!--Wrapper Content End-->
 
 		<!-- Js Files Start --> 
@@ -482,14 +486,22 @@
 
         <script id="property-template" type="text/x-handlebars-template">
 			<div class="col-md-12 col-sm-12 col-xs-12">
-				<div class="tl-properties-gallery">
+                <div class="tl-properties-gallery row">
 					{{#if photos.[0]}}
 					<div class="col-md-8 col-sm-8 col-xs-12">
+                        {{#if videos.length}}
+                        <figure class="properties-thumb">
+                            <video controls width="250" height="180">
+                                <source src="{{ photos.[0] }}" type="video/mp4">
+                            </video>
+                        </figure>
+                        {{else}}
 						<figure class="properties-thumb">
 							<a href="{{photos.[0]}}" data-lightbox="property-set">
 								<img src="{{photos.[0]}}" alt="" style="width:100%">
 							</a>
 						</figure>
+                        {{/if}}
 					</div>
 					<div class="col-sm-4 col-sm-4 col-xs-12">
 						{{#if photos.[1]}}
@@ -611,6 +623,15 @@
             }
 
             function showProperty(property) {
+
+                for (var i in property.photos) {
+                    document.querySelector('.hidden-images').innerHTML +=
+                        '<a href="' + property.photos[i] + '" data-lightbox="property-set"></a>'
+                }
+                if (property.videos.length > 0) {
+                    property.photos.unshift(property.videos[0]);
+                }
+
                 var templateSource = document.querySelector("#banner-template").innerHTML;
                 var compiledTemplate = Handlebars.compile(templateSource);
                 document.querySelector("#banner-parent").innerHTML = compiledTemplate(property);
@@ -622,7 +643,7 @@
             lightbox.option({
                 'resizeDuration': 200,
                 'wrapAround': true
-            })
+            });
 
             var id = getId();
             $.get("property.json", function (data) {

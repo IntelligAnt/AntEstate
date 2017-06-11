@@ -48,7 +48,9 @@
       "images/properties-md-img-03.jpg",
       "images/properties-md-img-04.jpg"
     ],
-    "videos": [],
+    "videos": [
+      "videos/1.mp4"
+    ],
     "views": 10,
     "tours": 2
   },

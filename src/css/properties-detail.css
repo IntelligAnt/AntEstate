@@ -27,3 +27,8 @@
 .nbh-btn {
     max-width: 300px;
 }
+
+video {
+    width: 100%;
+    height: 100%;
+}
