@@ -286,38 +286,31 @@
 									</div><!--Widget End-->
 									<!--Widget Start-->
 									<div class="widget widget-agent">
-										<h3>Contact Agent</h3>
-										<!--Agent Info Start-->
-										<div class="agent-info">
-											<img src="images/agent-sm-01.jpg" alt="">
-											<div class="text-holder">
-												<strong>David Shwimmer</strong>
-												<span>Buyer's Agent</span>
-												<ul class="ft-listed">
-													<li>
-														<i class="fa fa-phone" aria-hidden="true"></i>
-														<a href="tel:12353532">+1 212-431-2100</a>
-													</li>
-												</ul>
-											</div>
-										</div><!--Agent Info End-->
-										<form method="get" class="agent-form-outer">
+										<h3>Reservation</h3>
+										<form id="reserve-form" class="agent-form-outer" method="post">
 											<div class="inner-holder">
-												<input type="text" placeholder="Your Name">
+												<input type="text" placeholder="First name" required>
 											</div>
+
 											<div class="inner-holder">
-												<input type="tel" placeholder="phone">
+												<input type="text" placeholder="Last name" required>
 											</div>
+
 											<div class="inner-holder">
-												<input type="email" placeholder="Email">
+												<input type="email" placeholder="E-mail" required>
 											</div>
+
 											<div class="inner-holder">
-												<textarea name="Message" placeholder="Message"></textarea>
+												<input type="tel" placeholder="Phone number" required>
 											</div>
+
 											<div class="inner-holder">
-												<button class="btn-submit" type="button">Contact Agent</button>
+												<input type="date" placeholder="Date" required>
 											</div>
-											
+
+											<div class="input-holder">
+												<button class="btn-submit" type="submit">Reserve</button>
+											</div>
 										</form>
 									</div><!--Widget Holder End-->
 
