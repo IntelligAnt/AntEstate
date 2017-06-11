@@ -2813,6 +2813,7 @@ form .inner-holder{
   margin-bottom: 7px;
 }
 .agent-form-outer input[type="text"],.agent-form-outer input[type="email"],.agent-form-outer input[type="password"],
+.agent-form-outer input[type="date"],
 .agent-form-outer input[type="phone"],.agent-form-outer input[type="tel"],.agent-form-outer textarea{
   font-size: 14px;
   float: left;
