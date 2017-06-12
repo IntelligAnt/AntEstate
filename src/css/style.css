@@ -227,16 +227,16 @@ body{
 .tl-top-right .top-social-links{
   float: right;
 }
-.tl-top-right .tl-signup-btns{
+.tl-top-right .tl-language-btns{
   float: right;
   background-color: #25bd57;
 }
-.tl-signup-btns{
+.tl-language-btns{
   position: relative;
   padding: 16px 20px;
   z-index: 11;
 }
-.tl-signup-btns:before{
+.tl-language-btns:before{
   content: '';
   position: absolute;
   left: 0;
@@ -245,22 +245,22 @@ body{
   height: 0;
   z-index: -1;
 }
-.tl-signup-btns:hover:before{
+.tl-language-btns:hover:before{
   height: 100%;
 }
-.tl-signup-btns a{
+.tl-language-btns a{
   font-size: 13px;
   font-weight: 600;
   color: #fff;
   margin: 0 2px;
 }
-.tl-signup-btns #selected{
+.tl-language-btns #selected{
   color: #23527c;
 }
-.tl-signup-btns a:hover{
+.tl-language-btns a:hover{
   color: #fff;
 }
-.tl-signup-btns a .fa{
+.tl-language-btns a .fa{
   margin-right: 8px;
 }
 .tl-top-right .top-social-links{
@@ -597,16 +597,16 @@ body{
   float: left;
   padding: 18px 30px 13px;
 }
-#tl-header_v2 .tl-nav-holder .tl-signup-btns{
+#tl-header_v2 .tl-nav-holder .tl-language-btns{
   float: right;
   background-color: transparent;
   color: #2c2c2c;
 }
-#tl-header_v2 .tl-nav-holder .tl-signup-btns a{
+#tl-header_v2 .tl-nav-holder .tl-language-btns a{
   color: #2c2c2c;
   text-decoration: none;
 }
-#tl-header_v2 .tl-nav-holder .tl-signup-btns:hover,#tl-header_v2 .tl-nav-holder .tl-signup-btns:hover a{
+#tl-header_v2 .tl-nav-holder .tl-language-btns:hover,#tl-header_v2 .tl-nav-holder .tl-language-btns:hover a{
   color: #fff;
 }
 .tl-searchouter_v2{
@@ -665,14 +665,14 @@ body{
   float: left;
   margin-top: 13px;
 }
-#tl-header_v3 .tl-nav-holder .tl-signup-btns{
+#tl-header_v3 .tl-nav-holder .tl-language-btns{
   float: right;
   background-color: #25bd57;
   color: #2c2c2c;
   border-radius: 5px;
   padding: 12px 20px;
 }
-#tl-header_v3 .tl-nav-holder .tl-signup-btns:before{
+#tl-header_v3 .tl-nav-holder .tl-language-btns:before{
   border-radius: 5px;
 }
 #tl-header_v3 .tl-nav-holder .navbar{
@@ -2871,7 +2871,7 @@ form .inner-holder{
 /*================================================================*/
 /*Transition And Animation Css*/
 /*================================================================*/
-a,ul li,img,.tl-signup-btns:before,.tl-signup-btns,.tl-nav-holder .navbar-nav li ul ,.tl-nav-holder .dropdown-menu ul,.tl-nav-holder .navbar-nav li ul li:before,.tl-btn-style1:before,.tl-btn-style1,
+a,ul li,img,.tl-language-btns:before,.tl-language-btns,.tl-nav-holder .navbar-nav li ul ,.tl-nav-holder .dropdown-menu ul,.tl-nav-holder .navbar-nav li ul li:before,.tl-btn-style1:before,.tl-btn-style1,
 .parallax-btn:before,.parallax-btn,.tl-neighbor-item .tl-caption,.tl-neighbor-item .tl-caption h3,.tl-neighbor-item .tl-caption span,.tl-neighbor-item,.tl-heading-outer h2:before,.tl-service-item .icon-box:before,
 .tl-filterlist a:before,.tl-pagination-listed li a,.tl-text-holder .btn-more,.tl-social-links li a,.tl-social-links li a:before,.tl-modal-holder .modal-content {
     -webkit-transition: all .4s ease-in-out;

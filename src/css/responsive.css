@@ -115,7 +115,7 @@ header#tl-header_v2 .tl-navigation-row .tl-nav-holder{
 #tl-header_v2 .tl-logo{
 	width: 45%;
 }
-#tl-header_v2 .tl-signup-btns{
+#tl-header_v2 .tl-language-btns{
 	padding: 10px 15px;
 }
 .tl-searchouter_v2 .search-address-outer{
@@ -156,7 +156,7 @@ header#tl-header_v2 .tl-navigation-row .tl-nav-holder{
 .tl-top-right{
 	width: 100%;
 }
-.tl-top-right .tl-signup-btns{
+.tl-top-right .tl-language-btns{
 	float: left;
 }
 .tl-navigation-row{
@@ -267,7 +267,7 @@ header#tl-header_v2 .tl-navigation-row .tl-nav-holder{
 	text-align: center;
 	margin: 0 0 20px;
 }
-#tl-header_v3 .tl-nav-holder .tl-signup-btns{
+#tl-header_v3 .tl-nav-holder .tl-language-btns{
 	float: left;
 }
 #tl-header_v3 .tl-nav-holder .navbar-toggle{
@@ -367,7 +367,7 @@ ul.tl-featured-listed li{
 #tl-header_v2 .tl-nav-holder{
 	margin-top: -80px;
 }
-#tl-header_v2 .tl-nav-holder .tl-signup-btns{
+#tl-header_v2 .tl-nav-holder .tl-language-btns{
 	margin-right: 15px;
 }
 #tl-header_v2 .tl-nav-holder .navbar-collapse .nav{
