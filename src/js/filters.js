@@ -75,3 +75,7 @@ function extract_from_url() {
 function pack_to_url(url, filters) {
     return url + "?" + pack_to_string(filters);
 }
+
+function neighborhoodButton(nbh) {
+    window.location = "properties-grid-sidebar.html?city=" + nbh;
+}
