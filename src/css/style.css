@@ -254,6 +254,9 @@ body{
   color: #fff;
   margin: 0 2px;
 }
+.tl-signup-btns #selected{
+  color: #23527c;
+}
 .tl-signup-btns a:hover{
   color: #fff;
 }
