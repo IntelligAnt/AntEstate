@@ -30,7 +30,7 @@
 
 	    <!--Wrapper Content Start-->
 	    <div class="tl-wrapper">
-			<header></header>
+			<section id="header"></section>
 	    	<!--Inner Banner Start-->
 			<section class="tl-inner-banner" id="banner-parent">
 	    	</section><!--Inner Banner End-->
@@ -104,24 +104,12 @@
 					</div>
 				</section><!--Properties Section End-->
 
-				<!--Call to Action Start-->
-				<section class="tl-call-to-action-section">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-9 col-sm-9 col-xs-12">
-								<h3><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> <b>Homes for sale?</b> Explore properties like a pro.</h3>
-							</div>
-							<div class="col-md-3 col-sm-3 col-xs-12">
-								<a href="#" class="tl-btn-style1">Start Right Now</a>
-							</div>
-						</div>
-					</div>
-				</section><!--Call to Action End-->
+				<section id="action"></section>
 
 	    			
 	    	</div><!--Main Content End-->
 
-			<footer></footer>
+			<section id="footer"></section>
 
             <div class="hidden-images">
 
@@ -215,6 +203,7 @@
 								<div class="tl-text-holder">
 									{{#location}}
 									<h2>{{address}}, {{city}}{{/location}} - {{price}}EUR</h2>
+									<h3>{{type}} - {{sellType}}</h3>
 									<ul class="tl-meta-listed">
 										{{#info}}
 										<li> {{rooms}} rooms</li>
@@ -289,67 +278,7 @@
 			</div>
         </script>
 
-        <script>
-
-            function getId() {
-                var url = document.location.href;
-                var splitedUrl = url.split('?');
-                if (splitedUrl.length < 2) window.location = "p404.html";
-                if (splitedUrl[1].indexOf('#') === -1) {
-                    return splitedUrl[1];
-                }
-                return splitedUrl[1].substr(0, splitedUrl[1].indexOf('#'));
-            }
-
-            function submitTour() {
-                var numberOfTours = parseInt(localStorage.getItem(id + "-tours"));
-                localStorage.setItem(id + "-tours", numberOfTours + 1);
-            }
-
-            function showNumberOfTours(id) {
-                if (localStorage.getItem(id + "-tours") === null) {
-                    localStorage.setItem(id + "-tours", 0);
-                }
-                document.querySelector('#num-of-tours').innerHTML = localStorage.getItem(id + "-tours");
-            }
-
-            function showProperty(property) {
-
-                for (var i in property.photos) {
-                    document.querySelector('.hidden-images').innerHTML +=
-                        '<a href="' + property.photos[i] + '" data-lightbox="property-set"></a>'
-                }
-                if (property.videos.length > 0) {
-                    property.photos.unshift(property.videos[0]);
-                }
-
-                var templateSource = document.querySelector("#banner-template").innerHTML;
-                var compiledTemplate = Handlebars.compile(templateSource);
-                document.querySelector("#banner-parent").innerHTML = compiledTemplate(property);
-                templateSource = document.querySelector("#property-template").innerHTML;
-                compiledTemplate = Handlebars.compile(templateSource);
-                document.querySelector("#property-parent").innerHTML = compiledTemplate(property);
-            }
-
-            lightbox.option({
-                'resizeDuration': 200,
-                'wrapAround': true
-            });
-
-            var id = getId();
-            showNumberOfTours(id);
-            $.get("property.json", function (data) {
-                var property = data.find(function (e) {
-                    return e.id == id;
-                });
-                if (property === undefined) window.location = "p404.html";
-                console.log(property.info.heating);
-                property.info.heating = get_heating(property.info.heating);
-                console.log(property.info.heating);
-                showProperty(property);
-            });
-
-        </script>
+		<script src="js/detail.js"></script>
 
     </body>
 </html>

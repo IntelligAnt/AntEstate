@@ -26,7 +26,7 @@
     <body>
 	    <!--Wrapper Content Start-->
 	    <div class="tl-wrapper">
-			<header></header>
+			<section id="header"></section>
 	    	<!--Inner Banner Start-->
 	    	<section class="tl-inner-banner">
 	    		<div class="container">
@@ -55,68 +55,90 @@
 										<h3>Advanced Search</h3>
 										<!--Advance Search Form Start-->
 										<form action="#" class="tl-advance-search-form">
-											<!--Drop Down Start-->
-				    						<div class="dropdown tl-dropdown-outer">
-												<button class="btn btn-secondary dropdown-toggle" type="button" id="tl-dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-													Type <i class="fa fa-angle-down" aria-hidden="true"></i>
 
-												</button>
-												<div class="dropdown-menu" aria-labelledby="tl-dropdownMenu2">
-													<button class="dropdown-item" type="button">Housing</button>
-													<button class="dropdown-item" type="button">Business</button>
-													<button class="dropdown-item" type="button">Tourism</button>
-												</div>
-											</div><!--Drop Down End-->
-											<!--Drop Down Start-->
-	    									<div class="dropdown tl-dropdown-outer">
-												<button class="btn btn-secondary dropdown-toggle" type="button" id="tl-dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-													Rent/Sale <i class="fa fa-angle-down" aria-hidden="true"></i>
+											<div class="form-group">
+												<label for="type">Type</label>
+												<select class="form-control" id="type">
+													<option value="0">Housing</option>
+													<option value="1">Business</option>
+													<option value="2">Tourism</option>
+												</select>
+											</div>
 
-												</button>
-												<div class="dropdown-menu" aria-labelledby="tl-dropdownMenu3">
-													<button class="dropdown-item" type="button">For Rent</button>
-													<button class="dropdown-item" type="button">For Sale</button>
-												</div>
-											</div><!--Drop Down End-->
+											<div class="form-group">
+												<select class="form-control" id="sell-type">
+													<option value="0">For Sale</option>
+													<option value="1">For Rent</option>
+												</select>
+											</div>
 
-											<input class="tl-search-address" type="text" placeholder="Search by city">
+											<div class="form-group">
+												<input type="text" id="city" class="form-control"
+													   placeholder="Search city">
+											</div>
 
-											<!--Drop Down Start-->
-				    						<div class="dropdown tl-dropdown-outer">
-												<button class="btn btn-secondary dropdown-toggle" type="button" id="tl-dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-												Any Bads <i class="fa fa-angle-down" aria-hidden="true"></i>
+											<div class="form-group">
+												<input type="number" min="0" id="price-min" class="form-control"
+													   placeholder="Price Minimum">
+											</div>
 
-												</button>
-												<div class="dropdown-menu" aria-labelledby="tl-dropdownMenu4">
-													<button class="dropdown-item" type="button">3</button>
-													<button class="dropdown-item" type="button">4 </button>
-													<button class="dropdown-item" type="button">6</button>
-												</div>
-											</div><!--Drop Down End-->
-											<!--Drop Down Start-->
-				    						<div class="dropdown tl-dropdown-outer">
-												<button class="btn btn-secondary dropdown-toggle" type="button" id="tl-dropdownMenu5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-												Any Baths <i class="fa fa-angle-down" aria-hidden="true"></i>
+											<div class="form-group">
+												<input type="number" min="0" id="price-max" class="form-control"
+													   placeholder="Price Maximum">
+											</div>
 
-												</button>
-												<div class="dropdown-menu" aria-labelledby="tl-dropdownMenu5">
-													<button class="dropdown-item" type="button">5</button>
-													<button class="dropdown-item" type="button">6 </button>
-													<button class="dropdown-item" type="button">3</button>
-												</div>
-											</div><!--Drop Down End-->
-											<!--Drop Down Start-->
-				    						<div class="dropdown tl-dropdown-outer">
-												<button class="btn btn-secondary dropdown-toggle" type="button" id="tl-dropdownMenu6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-												Open House <i class="fa fa-angle-down" aria-hidden="true"></i>
+											<div class="form-group">
+												<input type="number" min="0" id="area-min" class="form-control"
+													   placeholder="Area Minimum">
+											</div>
 
-												</button>
-												<div class="dropdown-menu" aria-labelledby="tl-dropdownMenu6">
-													<button class="dropdown-item" type="button">Full Furnished</button>
-													<button class="dropdown-item" type="button">Well Decorated </button>
-													<button class="dropdown-item" type="button">Fully Support</button>
-												</div>
-											</div><!--Drop Down End-->
+											<div class="form-group">
+												<input type="number" min="0" id="area-max" class="form-control"
+													   placeholder="Area Maximum">
+											</div>
+
+											<div class="form-group">
+												<input type="number" min="0" id="rooms-min" class="form-control"
+													   placeholder="Rooms Minimum">
+											</div>
+
+											<div class="form-group">
+												<input type="number" min="0" id="rooms-max" class="form-control"
+													   placeholder="Rooms Maximum">
+											</div>
+
+											<div class="checkbox">
+												<label>
+													<input type="checkbox" id="parking">Required parking
+												</label>
+											</div>
+
+											<label>Heating types:<br></label>
+											<div class="checkbox">
+												<label>
+													<input type="checkbox" id="heating0" checked>Storage heater
+												</label>
+											</div>
+											<div class="checkbox">
+												<label>
+													<input type="checkbox" id="heating1" checked>Central
+												</label>
+											</div>
+											<div class="checkbox">
+												<label>
+													<input type="checkbox" id="heating2" checked>Norwegian radiator
+												</label>
+											</div>
+											<div class="checkbox">
+												<label>
+													<input type="checkbox" id="heating3" checked>Floor
+												</label>
+											</div>
+											<div class="checkbox">
+												<label>
+													<input type="checkbox" id="heating4" checked>Electric
+												</label>
+											</div>
 
 											<button class="btn-search-submit" type="button" onclick="filterClick()">
 												Search Properties
@@ -139,11 +161,11 @@
 										<ul class="ft-listed">
 											<li>
 												<i class="fa fa-phone" aria-hidden="true"></i>
-												+1 212-431-2100</li>
+												+381 (0)11 407 4821
+											</li>
 											<li>
 												<i class="fa fa-envelope-o" aria-hidden="true"></i>
-												<a href="mailto:realestate@info.com">
-												realestate@info.com</a>
+												<a href="mailto:ant.estate.rs@gmail.com">ant.estate.rs@gmail.com</a>
 											</li>
 										</ul>
 									</div><!--Widget Holder End-->
@@ -190,7 +212,7 @@
 	    			
 	    	</div><!--Main Content End-->
 
-			<footer></footer>
+			<section id="footer"></section>
 
 	    </div>
 	    <!--Wrapper Content End-->
@@ -206,6 +228,7 @@
 		<script src="js/custom.js"></script>
 		<script src="js/filters.js"></script>
 		<script src="js/sort.js"></script>
+		<script src="js/header-footer.js"></script>
 
 		<script id="entry-template" type="text/x-handlebars-template">
 			<div class="col-md-6 col-sm-6 col-xs-12">
@@ -244,60 +267,7 @@
 			</div>
 		</script>
 
-		<script>
-
-            function showFilteredData(data) {
-                document.querySelector("#number-of-results").innerHTML = data.length + " results found";
-                var templateSource = document.querySelector("#entry-template").innerHTML;
-                var compiledTemplate = Handlebars.compile(templateSource);
-                document.querySelector("#grid-view-parent").innerHTML = "";
-                for (var property in data) {
-                    document.querySelector("#grid-view-parent").innerHTML += compiledTemplate(data[property]);
-                }
-            }
-
-            var defaultFilters = {
-                type: 0,
-                sellType: 0,
-                min_price: 0,
-                max_price: Number.MAX_VALUE,
-                min_area: 0,
-                max_area: Number.MAX_VALUE,
-                min_rooms: 0,
-                max_rooms: Number.MAX_VALUE,
-                parking: false,
-                heating0: true,
-                heating1: true,
-                heating2: true,
-                city: "*",
-                sort: 4
-            };
-            var urlFilters = extract_from_url();
-
-            var filters = defaultFilters;
-            for (var attribute in urlFilters) {
-                filters[attribute] = urlFilters[attribute];
-            }
-            var filteredData = [];
-            applyFilters();
-
-            function sortClick(type) {
-                showFilteredData(sort(filteredData, type));
-                filters.sort = type;
-            }
-
-            function applyFilters() {
-                $.get("property.json", function (data) {
-                    filteredData = sort(filter(data, filters), filters.sort);
-                    showFilteredData(filteredData);
-                });
-            }
-
-            function filterClick() {
-                //filters = ...
-                applyFilters();
-            }
-		</script>
+		<script src="js/properties.js"></script>
     
    </body>
 </html>

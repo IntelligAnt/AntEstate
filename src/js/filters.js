@@ -10,6 +10,10 @@ function check_heating(h, filters) {
             return filters.heating1;
         case "2":
             return filters.heating2;
+        case "3":
+            return filters.heating3;
+        case "4":
+            return filters.heating4;
         default:
             return true;
     }
@@ -51,6 +55,12 @@ function extract_from_string(str) {
         filters.heating1 = filters.heating1 === "true";
     }
     if ("heating2" in filters) {
+        filters.heating2 = filters.heating2 === "true";
+    }
+    if ("heating3" in filters) {
+        filters.heating2 = filters.heating2 === "true";
+    }
+    if ("heating4" in filters) {
         filters.heating2 = filters.heating2 === "true";
     }
     return filters;
