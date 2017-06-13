@@ -1,0 +1,38 @@
+.features-element {
+    margin-bottom: 10px !important;
+}
+
+.fav-btn {
+    background-color: lightcoral !important;
+}
+
+.featured-list {
+    margin-top: 10px !important;
+}
+
+.feature-holder {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.feature-off img {
+    filter: grayscale(100%);
+    opacity: .2;
+}
+
+.feature-off p {
+    text-decoration: line-through;
+}
+
+.nbh-btn {
+    max-width: 300px;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+}
+
+.input-holder label {
+    margin-top: 10px;
+}

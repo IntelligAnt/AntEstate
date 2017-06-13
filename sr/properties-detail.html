@@ -1,0 +1,283 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ant Estate – Property Details</title>
+
+        <!-- Css Files Start -->
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/responsive.css" rel="stylesheet">
+		<link href="css/theme-color.css" rel="stylesheet">
+		<link href="css/owl.carousel.css" rel="stylesheet">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/responsive.css">
+		<link rel="stylesheet" href="css/properties-detail.css">
+
+        <link rel="stylesheet" href="css/lightbox2.min.css">
+
+		<!-- Css Files End -->
+		<!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+
+    </head>
+
+    <body>
+
+	    <!--Wrapper Content Start-->
+	    <div class="tl-wrapper">
+			<section id="header"></section>
+	    	<!--Inner Banner Start-->
+			<section class="tl-inner-banner" id="banner-parent">
+	    	</section><!--Inner Banner End-->
+
+	    
+	    	<!--Main Content Start-->
+	    	<div class="tl-main-content">
+
+				<!--Properties Section Start-->
+				<section class="tl-properties-section pd-tb-80">
+					<div class="container">
+						<div class="row">
+							<div id="property-parent"></div>
+							<div class="col-md-4 col-sm-4 col-xs-12">
+								<!--Sidebar Outer Start-->
+								<aside class="tl-sidebar-outer">
+									<!--Widget Start-->
+									<div class="widget">
+										<div class="agent-form-outer">
+											<button class="btn-submit fav-btn" type="button">Add to favorites <i class="fa fa-heart-o" aria-hidden="true"></i></button>
+										</div>
+									</div><!--Widget End-->
+									<!--Widget Start-->
+									<div class="widget widget-agent">
+										<h3>Tour reservation</h3>
+										<form id="reserve-form" class="agent-form-outer" method="post"
+											  onsubmit="submitTour()">
+											<div class="inner-holder">
+												<input type="text" placeholder="First name" required>
+											</div>
+
+											<div class="inner-holder">
+												<input type="text" placeholder="Last name" required>
+											</div>
+
+											<div class="inner-holder">
+												<input type="email" placeholder="E-mail" required>
+											</div>
+
+											<div class="inner-holder">
+												<input type="phone" placeholder="Phone number" required pattern="\d.*">
+											</div>
+
+											<div class="inner-holder">
+												<input type="date" placeholder="Date" required>
+											</div>
+
+											<div class="input-holder">
+												<button class="btn-submit" type="submit">Reserve</button>
+											</div>
+											<div class="input-holder">
+												<label>Number of tours: <span id="num-of-tours"></span></label>
+											</div>
+										</form>
+									</div><!--Widget Holder End-->
+
+									<!--Widget Start-->
+									<div class="widget widget-add">
+										<figure class="add-thumb">
+											<a href="#">
+												<img src="images/add-img.jpg" alt="">
+											</a>
+										</figure>
+									</div><!--Widget End-->
+
+								</aside><!--Sidebar Outer End-->
+							</div>
+
+						</div>
+					</div>
+				</section><!--Properties Section End-->
+
+				<section id="action"></section>
+
+	    			
+	    	</div><!--Main Content End-->
+
+			<section id="footer"></section>
+
+            <div class="hidden-images">
+
+            </div>
+
+        </div>
+	    <!--Wrapper Content End-->
+
+		<!-- Js Files Start --> 
+		<script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/lightbox2.min.js"></script>
+		<script src="js/bootstrap.min.js"></script> 
+		<script src="js/migrate.js"></script>  
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/imagesloaded.pkgd.js"></script>
+    	<script src="js/isotope.pkgd.min.js"></script>
+        <!--<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>-->
+        <!--<script src="js/map.js"></script>-->
+		<script src="js/handlebars-v4.0.10.js"></script>
+		<script src="js/custom.js"></script>
+		<script src="js/helper.js"></script>
+		<script src="js/header-footer.js"></script>
+		<script src="js/filters.js"></script>
+
+		<script id="banner-template" type="text/x-handlebars-template">
+			<div class="container">
+				<div class="left-holder">
+					<h3>{{description}}</h3>
+					{{#location}}
+					<span class="sub-title">{{address}}, {{city}}</span>
+					{{/location}}
+				</div>
+
+				<!--Breadcrum Start-->
+				<ul class="tl-breadcrumb-listed">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="properties.html">Properties</a></li>
+					<li class="active">{{name}}</li>
+				</ul>
+			</div>
+		</script>
+
+        <script id="property-template" type="text/x-handlebars-template">
+			<div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="tl-properties-gallery row">
+					{{#if photos.[0]}}
+					<div class="col-md-8 col-sm-8 col-xs-12">
+                        {{#if videos.length}}
+                        <figure class="properties-thumb">
+                            <video controls width="250" height="180">
+                                <source src="{{ photos.[0] }}" type="video/mp4">
+                            </video>
+                        </figure>
+                        {{else}}
+						<figure class="properties-thumb">
+							<a href="{{photos.[0]}}" data-lightbox="property-set">
+								<img src="{{photos.[0]}}" alt="" style="width:100%">
+							</a>
+						</figure>
+                        {{/if}}
+					</div>
+					<div class="col-sm-4 col-sm-4 col-xs-12">
+						{{#if photos.[1]}}
+						<figure class="properties-thumb">
+							<a href="{{photos.[1]}}" alt=""
+							   data-lightbox="property-set">
+								<img src="{{photos.[1]}}" alt="" style="width:100%">
+							</a>
+						</figure>
+						{{/if}}
+						{{#if photos.[2]}}
+						<figure class="properties-thumb">
+							<a href="{{photos.[2]}}" alt=""
+							   data-lightbox="property-set">
+								<img src="{{photos.[2]}}" alt="" style="width:100%">
+							</a>
+						</figure>
+						{{/if}}
+					</div>
+					{{/if}}
+				</div>
+			</div>
+
+			<div class="col-md-8 col-sm-8 col-xs-12">
+				<!--Properties Info Start-->
+				<div class="tl-properties-info">
+					<!--TOp HOlder Start-->
+					<div class="top-holder">
+						<div class="row">
+							<div class="col-md-8 col-sm-8 col-xs-12">
+								<div class="tl-text-holder">
+									{{#location}}
+									<h2>{{address}}, {{city}}{{/location}} - {{price}}EUR</h2>
+									<h3>{{type}} - {{sellType}}</h3>
+									<ul class="tl-meta-listed">
+										{{#info}}
+										<li> {{rooms}} rooms</li>
+										<li> {{beds}} beds</li>
+										{{/info}}
+										<li> {{area}} m&#178;</li>
+									</ul>
+									{{#info}}
+									<p>{{text}}</p>
+									{{/info}}
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-12">
+								<div id="properties-map">
+									<img src="{{#location}}{{map}}{{/location}}" alt=""
+										 style="max-width:100%;max-height:300px">
+								</div>
+							</div>
+						</div>
+					</div><!--TOp HOlder End-->
+					<h3>Features</h3>
+					{{#info}}
+					<h4 class="features-element">Heating: {{heating}}</h4>
+					<h4 class="features-element">Parking:
+						{{#if parking}}
+						<i class="fa fa-check" aria-hidden="true" style="color:green"></i>
+						{{else}}
+						<i class="fa fa-close" aria-hidden="true" style="color:red"></i>
+						{{/if}}
+					</h4>
+					<ul class="tl-featured-listed featured-list">
+						{{#each features}}
+						<li>{{this}}</li>
+						{{/each}}{{/info}}
+					</ul>
+					<!--Adiltional Information Start-->
+					<div class="tl-adiltional-inforamtion">
+						<h3>Equipment of building</h3>
+						<div class="row">
+							{{#info}}{{#building}}
+							<div class="feature-holder col-md-2 col-sm-2 col-xs-4 {{#unless elevator}}feature-off{{/unless}}">
+								<img src="images/icon-elevator.png" alt=""><br>
+								<p>Elevator</p>
+							</div>
+							<div class="feature-holder col-md-2 col-sm-2 col-xs-4 {{#unless intercom}}feature-off{{/unless}}">
+								<img src="images/icon-phone.png" alt=""><br>
+								<p>Intercom</p>
+							</div>
+							<div class="feature-holder col-md-2 col-sm-2 col-xs-4 {{#unless cameras}}feature-off{{/unless}}">
+								<img src="images/icon-security-camera.png" alt=""><br>
+								<p>Cameras</p>
+							</div>
+							<div class="feature-holder col-md-2 col-sm-2 col-xs-4 {{#unless security}}feature-off{{/unless}}">
+								<img src="images/icon-security.png" alt=""><br>
+								<p>Security</p>
+							</div>
+							<div class="feature-holder col-md-2 col-sm-2 col-xs-4 {{#unless wheelchair}}feature-off{{/unless}}">
+								<img src="images/icon-handicapped.png" alt=""><br>
+								<p>Wheelchair access</p>
+							</div>
+							{{/building}}{{/info}}
+						</div>
+					</div><!--Adiltional Information End-->
+					<h3>Neighborhood: {{#location}}{{city}}</h3>
+					<p>Check other properties in this neighborhood...</p>
+					<div class="agent-form-outer nbh-btn">
+						<button class="btn-submit" type="button" onclick="neighborhoodButton('{{city}}')">{{city}}
+						</button>
+						{{/location}}
+					</div>
+				</div><!--Properties Info End-->
+			</div>
+        </script>
+
+		<script src="js/detail.js"></script>
+
+    </body>
+</html>
