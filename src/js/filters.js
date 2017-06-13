@@ -87,5 +87,5 @@ function pack_to_url(url, filters) {
 }
 
 function neighborhoodButton(nbh) {
-    window.location = "properties-grid-sidebar.html?city=" + nbh;
+    window.location = "properties.html?city=" + nbh;
 }
