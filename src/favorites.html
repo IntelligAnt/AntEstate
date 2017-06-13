@@ -133,6 +133,8 @@
 <script src="js/filters.js"></script>
 <script src="js/sort.js"></script>
 <script src="js/header-footer.js"></script>
+<script src="js/favs.js"></script>
+<script src="js/favorites.js"></script>
 
 <script id="entry-template" type="text/x-handlebars-template">
     <div class="col-md-6 col-sm-6 col-xs-12">
@@ -144,17 +146,25 @@
                 </div>
                 <figcaption class="tl-caption">
                     <div class="top-text">
-                        {{#if sellType}}
-                        <span class="rent-btn">For Rent</span>
-                        {{else}}
-                        <span class="rent-btn bg-red">For Sale</span>
-                        {{/if}}
-                        <a href="#" class="like-btn">
-                            <i class="fa fa-ban" aria-hidden="true"></i>
+                        <a href="properties-detail.html?{{id}}">
+                            {{#if sellType}}
+                            <span class="rent-btn">For Rent</span>
+                            {{else}}
+                            <span class="rent-btn bg-red">For Sale</span>
+                            {{/if}}
                         </a>
+                        {{#isFav id}}
+                            <a href="" class="like-btn" onclick="removeFav({{id}}); window">
+                                <i class="fa fa-ban" aria-hidden="true"></i>
+                            </a>
+                        {{else}}
+                            <a href="" class="like-btn" onclick="addFav({{id}})">
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </a>
+                        {{/isFav}}
                     </div>
                     <div class="bottom-text">
-                        <h3>{{price}} EUR</h3>
+                        <h3>{{price}} €</h3>
                         {{#location}}
                         <span>{{address}}, {{city}}</span>
                         {{/location}}
@@ -175,8 +185,6 @@
         </div><!--Properties Box End-->
     </div>
 </script>
-
-<script src="js/favorites.js"></script>
 
 </body>
 </html>
