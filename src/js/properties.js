@@ -60,8 +60,8 @@ function loadFormValues(urlFilters) {
 }
 
 var defaultFilters = {
-    type: 0,
-    sellType: 0,
+    type: -1,
+    sellType: -1,
     min_price: 0,
     max_price: Number.MAX_VALUE,
     min_area: 0,
