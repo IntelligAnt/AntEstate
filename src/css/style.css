@@ -296,11 +296,12 @@ body{
 .tl-navigation-row {
   width: 100%;
   float: left;
-  padding: 38px 0;
+  padding: 28px 0;
   background-color: #fff;
   position: relative;
 }
 .tl-nav-holder{
+  margin-top: 10px;
   float: left;
   width: 100%;
 }
