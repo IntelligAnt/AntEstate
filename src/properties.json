@@ -57,7 +57,7 @@
   {
     "id": 2,
     "type": 0,
-    "sellType": 0,
+    "sellType": 1,
     "name": "Drugi stan",
     "description": "Dramatic & urban condo",
     "location": {

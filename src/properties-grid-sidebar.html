@@ -240,6 +240,11 @@
 						</div>
 						<figcaption class="tl-caption">
 							<div class="top-text">
+                                {{#if sellType}}
+                                <span class="rent-btn">For Rent</span>
+                                {{else}}
+                                <span class="rent-btn bg-red">For Sale</span>
+                                {{/if}}
 								<a href="#" class="like-btn">
 									<i class="fa fa-heart-o" aria-hidden="true"></i>
 								</a>
