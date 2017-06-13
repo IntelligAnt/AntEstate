@@ -8,5 +8,5 @@ function showFilteredData(data) {
 }
 
 $.get("properties.json", function (data) {
-    showFilteredData(sort_by_date_desc(data).slice(0, 5));
+    showFilteredData(sort_by_date_desc(data).slice(0, 6));
 });
