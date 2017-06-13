@@ -36,6 +36,9 @@ function loadFormValues(urlFilters) {
     if ('city' in urlFilters) {
         document.querySelector('#city').value = urlFilters.city;
     }
+    if ('address' in urlFilters) {
+        document.querySelector('#address').value = urlFilters.address;
+    }
     if ('parking' in urlFilters) {
         document.querySelector('#parking').checked = urlFilters.parking;
     }
@@ -72,6 +75,7 @@ var defaultFilters = {
     heating3: true,
     heating4: true,
     city: "*",
+    address: "*",
     sort: 4
 };
 var urlFilters = extract_from_url();
@@ -108,6 +112,7 @@ function filterClick() {
     var type = document.querySelector('#type').value;
     var sellType = document.querySelector('#sell-type').value;
     var city = document.querySelector('#city').value;
+    var address = document.querySelector('#address').value;
     var parking = document.querySelector('#parking').checked;
     var heating0 = document.querySelector('#heating0').checked;
     var heating1 = document.querySelector('#heating1').checked;
@@ -167,6 +172,12 @@ function filterClick() {
         filters.city = city;
     } else {
         filters.city = defaultFilters.city;
+    }
+
+    if (address !== "") {
+        filters.address = address;
+    } else {
+        filters.address = defaultFilters.address;
     }
 
     filters.parking = parking;

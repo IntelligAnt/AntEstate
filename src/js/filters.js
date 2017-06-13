@@ -19,9 +19,13 @@ function check_heating(h, filters) {
     }
 }
 
-function check_city(city, filter) {
-    if (filter === "*") return true;
-    return filter === city;
+function check_location(loc, filters) {
+    var lcity = loc.city.toLowerCase(),    fcity = filters.city.toLowerCase(),
+        laddr = loc.address.toLowerCase(), faddr = filters.address.toLowerCase();
+    if (fcity === "*" && faddr === "*") return true;
+    if (fcity !== "*" && !lcity.startsWith(fcity)) return false;
+    if (faddr === "*") return true;
+    return laddr.startsWith(faddr);
 }
 
 function filter(data, filters) {
@@ -33,7 +37,7 @@ function filter(data, filters) {
             && is_in_range(e.info.rooms, filters.min_rooms, filters.max_rooms)
             && (!filters.parking || e.info.parking)
             && check_heating(e.info.heating, filters)
-            && check_city(e.location.city, filters.city);
+            && check_location(e.location, filters);
     });
 }
 

@@ -2733,7 +2733,7 @@ ul.tl-listed_v2 li a{
 .tl-footer-middle-section .widget h3,.tl-footer-middle-section .widget h4{
   color: #fff;
 }
-.tl-footer-middle-section .ft-listed li{
+.tl-footer-middle-section .ft-listed li,.tl-footer-middle-section .ft-listed li a{
   color: #b8c9d6;
 }
 /*

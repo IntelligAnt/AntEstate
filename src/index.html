@@ -50,18 +50,18 @@
 								<select class='tl-dropdown-outer tl-select-box'>
 									<option value='sale'>For Sale</option>
 									<option value='rent'>For Rent</option>
-								 </select><!--Drop Down End-->
+								</select><!--Drop Down End-->
 
-								<input class="tl-search-field tl-search-address" type="text" placeholder="Search by neighborhood, city or address">
+								<input class="tl-search-field tl-search-address" type="text" placeholder="Search by city, address or description">
 
 								<div class="tl-minmax">
-									<input class="tl-search-field tl-minmax-elem" type="text" placeholder="Min area">
-									<input class="tl-search-field tl-minmax-elem" type="text" placeholder="Max area">
+									<input class="tl-search-field tl-minmax-elem" type="number" min="0" placeholder="Min area">
+									<input class="tl-search-field tl-minmax-elem" type="number" min="0" placeholder="Max area">
 								</div>
 								
 								<div class="tl-minmax">
-									<input class="tl-search-field tl-minmax-elem" type="text" placeholder="Min price">
-									<input class="tl-search-field tl-minmax-elem" type="text" placeholder="Max price">
+									<input class="tl-search-field tl-minmax-elem" type="number" min="0" placeholder="Min price">
+									<input class="tl-search-field tl-minmax-elem" type="number" min="0" placeholder="Max price">
 								</div>
 
 								<!--Drop Down Start-->
@@ -75,14 +75,14 @@
 										<button class="dropdown-item" type="button">4 </button>
 										<button class="dropdown-item" type="button">6</button>
 									</div>
-								</div><!--Drop Down End-->
+								</div>-->
+								<!--Drop Down End-->
 
 								<button class="btn-search-submit" type="submit">Search</button>
 
 							</form><!--Search Form End-->
 						</div><!--Search Bar Inner End-->
-						<a href="#" class="search-moreOption"><i class="fa fa-cog" aria-hidden="true"></i>
- More Options</a>
+						<a href="properties.html" class="search-moreOption"><i class="fa fa-cog" aria-hidden="true"></i> More Options</a>
 					</div><!--Search Bar Content End-->
 				</div>
 			</section><!--Search Content End-->
@@ -274,7 +274,7 @@
 							</div>
 
 							<div class="col-md-12 col-sm-12 col-xs-12 text-center">
-								<a href="properties.html" class="tl-btn-style1">See More Listing</a>
+								<a href="properties.html" class="tl-btn-style1">See More Listings</a>
 							</div>
 						
 						</div>
@@ -285,10 +285,8 @@
 				<section class="tl-parallax-section">
 					<div class="container">
 						<div class="col-md-3 col-sm-4 col-xs-12">
-							<!--Parallax Image Start-->
-							<div class="parallax-fx-img">
-								
-							</div><!--Parallax Image End-->
+							<!--Parallax Image-->
+							<div class="parallax-fx-img"></div>
 						</div>
 						<div class="col-md-7 col-sm-6 col-xs-12">
 							<div class="parallax-info">
@@ -297,7 +295,7 @@
 							</div>
 						</div>
 						<div class="col-md-2 col-sm-3 col-xs-12">
-							<a href="#" class="parallax-btn">Find Agent</a>
+							<a href="contact.html" class="parallax-btn">Contact Us</a>
 						</div>
 					</div>
 				</section><!--Parallax Section End-->
@@ -307,15 +305,15 @@
 					<div class="container">
 						<!--Heading Outer Start-->
 						<div class="tl-heading-outer">
-							<h2>Neighborhood</h2>
+							<h2>Neighborhoods</h2>
 						</div><!--Heading Outer End-->
 						<div class="row">
 							<div class="col-md-4 col-sm-4 col-xs-12">
 								<!--Neighbor Hood Item Start-->
 								<figure class="tl-neighbor-item">
-									<img src="images/neighbourhood-img-01.jpg" alt="">
+									<img src="images/beograd.jpg" alt="">
 									<figcaption class="tl-caption">
-										<h3><a href="#">New York</a></h3>
+										<h3><a href="properties.html?city=Beograd">Belgrade</a></h3>
 										<span>150 Properties</span>
 									</figcaption>
 								</figure><!--Neighbor Hood Item Start-->
@@ -323,9 +321,9 @@
 							<div class="col-md-4 col-sm-4 col-xs-12">
 								<!--Neighbor Hood Item Start-->
 								<figure class="tl-neighbor-item">
-									<img src="images/neighbourhood-img-02.jpg" alt="">
+									<img src="images/novi-sad.jpg" alt="">
 									<figcaption class="tl-caption">
-										<h3><a href="#">Seattle</a></h3>
+										<h3><a href="properties.html?city=Novi%20Sad">Novi Sad</a></h3>
 										<span>76 Properties</span>
 									</figcaption>
 								</figure><!--Neighbor Hood Item Start-->
@@ -333,9 +331,9 @@
 							<div class="col-md-4 col-sm-4 col-xs-12">
 								<!--Neighbor Hood Item Start-->
 								<figure class="tl-neighbor-item">
-									<img src="images/neighbourhood-img-03.jpg" alt="">
+									<img src="images/niš.jpg" alt="">
 									<figcaption class="tl-caption">
-										<h3><a href="#">Los Angeles</a></h3>
+										<h3><a href="properties.html?city=Niš">Niš</a></h3>
 										<span>90 Properties</span>
 									</figcaption>
 								</figure><!--Neighbor Hood Item Start-->
@@ -343,74 +341,6 @@
 						</div>
 					</div>
 				</section><!--Neighborhood Section End-->
-
-				<!--Blog Section Start-->
-				<section class="tl-blog-section pd-t-80">
-					<div class="container">
-						<!--Heading Outer Start-->
-						<div class="tl-heading-outer">
-							<h2>Valuable Advices</h2>
-						</div><!--Heading Outer End-->
-						<div class="row">
-							<div class="col-md-3 col-sm-6 col-xs-12">
-								<!--Blog Box Start-->
-								<div class="tl-blog-box">
-									<figure class="tl-thumb">
-										<a href="blog-detail.html"><img src="images/blog-sm-img-01.jpg" alt=""></a>
-									</figure>
-									<div class="tl-text-holder">
-										<h3><a href="blog-detail.html">New loft apartments</a></h3>
-										<ul class="tl-meta-listed tl-meta-listed_v2">
-											<li><i class="fa fa-clock-o" aria-hidden="true"></i>26 February, 2017</li>
-										</ul>
-									</div>
-								</div><!--Blog Box Start-->
-							</div>
-							<div class="col-md-3 col-sm-6 col-xs-12">
-								<!--Blog Box Start-->
-								<div class="tl-blog-box">
-									<figure class="tl-thumb">
-										<a href="blog-detail.html"><img src="images/blog-sm-img-02.jpg" alt=""></a>
-									</figure>
-									<div class="tl-text-holder">
-										<h3><a href="blog-detail.html">Exclusive listings</a></h3>
-										<ul class="tl-meta-listed tl-meta-listed_v2">
-											<li><i class="fa fa-clock-o" aria-hidden="true"></i>06 March, 2017</li>
-										</ul>
-									</div>
-								</div><!--Blog Box Start-->
-							</div>
-							<div class="col-md-3 col-sm-6 col-xs-12">
-								<!--Blog Box Start-->
-								<div class="tl-blog-box">
-									<figure class="tl-thumb">
-										<a href="blog-detail.html"><img src="images/blog-sm-img-03.jpg" alt=""></a>
-									</figure>
-									<div class="tl-text-holder">
-										<h3><a href="blog-detail.html">How much it cost?</a></h3>
-										<ul class="tl-meta-listed tl-meta-listed_v2">
-											<li><i class="fa fa-clock-o" aria-hidden="true"></i>24 March, 2017</li>
-										</ul>
-									</div>
-								</div><!--Blog Box Start-->
-							</div>
-							<div class="col-md-3 col-sm-6 col-xs-12">
-								<!--Blog Box Start-->
-								<div class="tl-blog-box">
-									<figure class="tl-thumb">
-										<a href="blog-detail.html"><img src="images/blog-sm-img-04.jpg" alt=""></a>
-									</figure>
-									<div class="tl-text-holder">
-										<h3><a href="blog-detail.html">Original mortgage rates</a></h3>
-										<ul class="tl-meta-listed tl-meta-listed_v2">
-											<li><i class="fa fa-clock-o" aria-hidden="true"></i>15 March, 2017</li>
-										</ul>
-									</div>
-								</div><!--Blog Box Start-->
-							</div>
-						</div>
-					</div>
-				</section><!--Blog Section End-->
 
 				<section id="action"></section>
 					

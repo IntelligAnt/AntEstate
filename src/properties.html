@@ -55,65 +55,49 @@
 										<h3>Advanced Search</h3>
 										<!--Advance Search Form Start-->
 										<form action="#" class="tl-advance-search-form">
-
+											<label>Type</label>
 											<div class="form-group">
-												<label for="type">Type</label>
 												<select class="form-control" id="type">
 													<option value="0">Housing</option>
 													<option value="1">Business</option>
 													<option value="2">Tourism</option>
 												</select>
 											</div>
-
 											<div class="form-group">
 												<select class="form-control" id="sell-type">
 													<option value="0">For Sale</option>
 													<option value="1">For Rent</option>
 												</select>
 											</div>
-
+											
+											<label>Location</label>
 											<div class="form-group">
-												<input type="text" id="city" class="form-control"
-													   placeholder="Search city">
+												<input type="text" id="city" class="form-control" placeholder="City">
+											</div>
+											<div class="form-group">
+												<input type="text" id="address" class="form-control" placeholder="Address">
 											</div>
 
+											<label>Parameters</label>
 											<div class="form-group">
-												<input type="number" min="0" id="price-min" class="form-control"
-													   placeholder="Min Price">
+												<input type="number" min="0" id="area-min" class="form-control" placeholder="Min area">
+												<input type="number" min="0" id="area-max" class="form-control" placeholder="Max area">
 											</div>
-
 											<div class="form-group">
-												<input type="number" min="0" id="price-max" class="form-control"
-													   placeholder="Max Price">
+												<input type="number" min="0" id="price-min" class="form-control" placeholder="Min price">
+												<input type="number" min="0" id="price-max" class="form-control" placeholder="Max price">
 											</div>
-
 											<div class="form-group">
-												<input type="number" min="0" id="area-min" class="form-control"
-													   placeholder="Min Area">
+												<input type="number" min="0" id="rooms-min" class="form-control" placeholder="Min rooms">
+												<input type="number" min="0" id="rooms-max" class="form-control" placeholder="Max rooms">
 											</div>
-
-											<div class="form-group">
-												<input type="number" min="0" id="area-max" class="form-control"
-													   placeholder="Max Area">
-											</div>
-
-											<div class="form-group">
-												<input type="number" min="0" id="rooms-min" class="form-control"
-													   placeholder="Min Rooms">
-											</div>
-
-											<div class="form-group">
-												<input type="number" min="0" id="rooms-max" class="form-control"
-													   placeholder="Max Rooms">
-											</div>
-
 											<div class="checkbox">
 												<label>
 													<input type="checkbox" id="parking">Required parking
 												</label>
 											</div>
 
-											<label>Heating types:<br></label>
+											<label>Heating types</label>
 											<div class="checkbox">
 												<label>
 													<input type="checkbox" id="heating0" checked>Storage heater
@@ -161,7 +145,7 @@
 										<ul class="ft-listed">
 											<li>
 												<i class="fa fa-phone" aria-hidden="true"></i>
-												+381 (0)11 407 4821
+												<a href="tel:+381114074821">+381 (0)11 407 4821</a>
 											</li>
 											<li>
 												<i class="fa fa-envelope-o" aria-hidden="true"></i>
@@ -250,7 +234,7 @@
 								</a>
 							</div>
 							<div class="bottom-text">
-                                <h3>{{price}} EUR</h3>
+                                <h3>{{price}} €</h3>
                                 {{#location}}
                                 <span>{{address}}, {{city}}</span>
                                 {{/location}}
