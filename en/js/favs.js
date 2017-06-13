@@ -8,6 +8,7 @@ function setFavs(favs) {
 
 function addFav(id) {
     var favs = getFavs();
+    id = parseInt(id);
     if (favs.indexOf(id) < 0) favs.push(id);
     setFavs(favs);
 }

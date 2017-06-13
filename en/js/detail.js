@@ -56,3 +56,7 @@ $.get("properties.json", function (data) {
     property.sellType = get_sell_type(property.sellType);
     showProperty(property);
 });
+
+function addDetailFav() {
+    addFav(id);
+}

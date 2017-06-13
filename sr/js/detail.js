@@ -22,12 +22,13 @@ function showNumberOfTours(id) {
 
 function showProperty(property) {
 
-    for (var i in property.photos) {
-        document.querySelector('.hidden-images').innerHTML +=
-            '<a href="' + property.photos[i] + '" data-lightbox="property-set"></a>'
-    }
     if (property.videos.length > 0) {
         property.photos.unshift(property.videos[0]);
+    }
+
+    for (i = 3; i < property.photos.length; i++) {
+        document.querySelector('.hidden-images').innerHTML +=
+            '<a href="' + property.photos[i] + '" data-lightbox="property-set"></a>'
     }
 
     var templateSource = document.querySelector("#banner-template").innerHTML;
@@ -55,3 +56,7 @@ $.get("properties.json", function (data) {
     property.sellType = get_sell_type(property.sellType);
     showProperty(property);
 });
+
+function addDetailFav() {
+    addFav(id);
+}
