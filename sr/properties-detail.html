@@ -224,10 +224,10 @@
 							</div>
 						</div>
 					</div><!--TOp HOlder End-->
-					<h3>Features</h3>
+					<h3>Особине</h3>
 					{{#info}}
-					<h4 class="features-element">Heating: {{heating}}</h4>
-					<h4 class="features-element">Parking:
+					<h4 class="features-element">Грејање: {{heating}}</h4>
+					<h4 class="features-element">Паркинг:
 						{{#if parking}}
 						<i class="fa fa-check" aria-hidden="true" style="color:green"></i>
 						{{else}}
@@ -241,34 +241,34 @@
 					</ul>
 					<!--Adiltional Information Start-->
 					<div class="tl-adiltional-inforamtion">
-						<h3>Equipment of building</h3>
+						<h3>Опремљеност зграде:</h3>
 						<div class="row">
 							{{#info}}{{#building}}
 							<div class="feature-holder col-md-2 col-sm-2 col-xs-4 {{#unless elevator}}feature-off{{/unless}}">
 								<img src="images/icon-elevator.png" alt=""><br>
-								<p>Elevator</p>
+								<p>Лифт</p>
 							</div>
 							<div class="feature-holder col-md-2 col-sm-2 col-xs-4 {{#unless intercom}}feature-off{{/unless}}">
 								<img src="images/icon-phone.png" alt=""><br>
-								<p>Intercom</p>
+								<p>Интерфон</p>
 							</div>
 							<div class="feature-holder col-md-2 col-sm-2 col-xs-4 {{#unless cameras}}feature-off{{/unless}}">
 								<img src="images/icon-security-camera.png" alt=""><br>
-								<p>Cameras</p>
+								<p>Камере</p>
 							</div>
 							<div class="feature-holder col-md-2 col-sm-2 col-xs-4 {{#unless security}}feature-off{{/unless}}">
 								<img src="images/icon-security.png" alt=""><br>
-								<p>Security</p>
+								<p>Обезбеђење</p>
 							</div>
 							<div class="feature-holder col-md-2 col-sm-2 col-xs-4 {{#unless wheelchair}}feature-off{{/unless}}">
 								<img src="images/icon-handicapped.png" alt=""><br>
-								<p>Wheelchair access</p>
+								<p>Приступ за колица</p>
 							</div>
 							{{/building}}{{/info}}
 						</div>
 					</div><!--Adiltional Information End-->
-					<h3>Neighborhood: {{#location}}{{city}}</h3>
-					<p>Check other properties in this neighborhood...</p>
+					<h3>Место: {{#location}}{{city}}</h3>
+					<p>Погледајте и друге објекте у овом месту...</p>
 					<div class="agent-form-outer nbh-btn">
 						<button class="btn-submit" type="button" onclick="neighborhoodButton('{{city}}')">{{city}}
 						</button>
