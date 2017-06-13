@@ -92,7 +92,7 @@ function sortClick(type) {
 }
 
 function applyFilters() {
-    $.get("property.json", function (data) {
+    $.get("properties.json", function (data) {
         filteredData = sort(filter(data, filters), filters.sort);
         showFilteredData(filteredData);
     });

@@ -45,7 +45,7 @@ lightbox.option({
 
 var id = getId();
 showNumberOfTours(id);
-$.get("property.json", function (data) {
+$.get("properties.json", function (data) {
     var property = data.find(function (e) {
         return e.id == id;
     });
