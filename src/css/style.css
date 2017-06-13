@@ -2730,11 +2730,11 @@ ul.tl-listed_v2 li a{
   width: 100%;
   padding-bottom: 50px;
 }
-.tl-footer-middle-section .widget h3{
+.tl-footer-middle-section .widget h3,.tl-footer-middle-section .widget h4{
   color: #fff;
 }
-.tl-footer-middle-section .ft-listed li,.tl-footer-middle-section .ft-listed li a{
-  color:#b8c9d6;
+.tl-footer-middle-section .ft-listed li{
+  color: #b8c9d6;
 }
 /*
 <------Widgets CSS----->
@@ -2750,6 +2750,10 @@ ul.tl-listed_v2 li a{
   margin-bottom: 24px;
   text-transform: uppercase;
 }
+.widget h4{
+  font-size: 14px;
+  font-weight: 400;
+}
 .widget-about p{
   font-size: 14px;
   line-height: 26px;
@@ -2762,17 +2766,17 @@ ul.tl-listed_v2 li a{
   width: 100%;
   margin: 0;
 }
-.ft-listed li{
+.ft-listed > li{
   font-size: 14px;
   line-height: 18px;
   display: block;
   margin-bottom: 16px;
   color: #444;
 }
-.ft-listed li:last-child{
+.ft-listed > li:last-child{
   margin-bottom: 0;
 }
-.ft-listed li .fa{
+.ft-listed > li .fa{
   font-size: 14px;
   width: 20px;
   height: 20px;
