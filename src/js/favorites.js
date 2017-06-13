@@ -1,5 +1,5 @@
 function showFilteredData(data) {
-    document.querySelector("#number-of-results").innerHTML = data.length + " favourites";
+    document.querySelector("#number-of-results").innerHTML = data.length + " favorites";
     var templateSource = document.querySelector("#entry-template").innerHTML;
     var compiledTemplate = Handlebars.compile(templateSource);
     document.querySelector("#grid-view-parent").innerHTML = "";
