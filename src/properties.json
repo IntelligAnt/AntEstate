@@ -3,7 +3,481 @@
     "id": 1,
     "type": 0,
     "sellType": 0,
-    "name": "Perin stan",
+    "name": "Housing Property",
+    "description": "Dramatic & urban condo",
+    "location": {
+      "city": "Nis",
+      "address": "Perina 1",
+      "coordinates": [
+        32.30642,
+        -122.61458
+      ],
+      "map": "images/map-example.JPG"
+    },
+    "info": {
+      "text": "This spectacular full floor, 8,255 square foot sprawling penthouse includes six bedrooms, seven bathrooms, library with wood-burning fireplace and two powder rooms. North, South, East, and West exposures provide panoramic views of Central Park and the City",
+      "features": [
+        "Fitness",
+        "Center",
+        "Doorman",
+        "View: Park",
+        "Fireplace",
+        "Garden"
+      ],
+      "rooms": 1,
+      "beds": 2,
+      "parking": true,
+      "heating": "0",
+      "building": {
+        "elevator": true,
+        "intercom": true,
+        "cameras": false,
+        "security": false,
+        "wheelchair": true
+      }
+    },
+    "area": 40,
+    "price": 60000,
+    "date": 1493596800,
+    "contact": {
+      "phone": "123",
+      "email": "pera@whitehouse.gov"
+    },
+    "photos": [
+      "images/properties-md-img-01.jpg",
+      "images/properties-md-img-03.jpg",
+      "images/properties-md-img-04.jpg"
+    ],
+    "videos": [
+      "videos/1.mp4"
+    ],
+    "views": 10,
+    "tours": 2
+  },
+  {
+    "id": 2,
+    "type": 0,
+    "sellType": 1,
+    "name": "Housing Property",
+    "description": "Cozy family home",
+    "location": {
+      "city": "Novi Sad",
+      "address": "Kraljice Natalije 20",
+      "coordinates": [
+        32.30642,
+        -122.61458
+      ],
+      "map": "images/map-example.JPG"
+    },
+    "info": {
+      "text": "This stylish residence is nestled on a large level block in a desirably tranquil cul-de-sac location. The appartmant comes complete with two living rooms, a welcoming kitchen/dining area, two bathrooms, three bedrooms, a study and a laundry, and retains the value of peaceful living while being conveniently close to shops, school and transport.",
+      "features": [
+        "Fitness",
+        "Built in 2012",
+        "Fireplace",
+        "Garden"
+      ],
+      "rooms": 6,
+      "beds": 3,
+      "parking": false,
+      "heating": "1",
+      "building": {
+        "elevator": true,
+        "intercom": true,
+        "cameras": true,
+        "security": false,
+        "wheelchair": true
+      }
+    },
+    "area": 90,
+    "price": 1000.43,
+    "date": 1493697800,
+    "contact": {
+      "phone": "1234",
+      "email": "zika@whitehouse.gov"
+    },
+    "photos": [
+      "images/properties-single-img-01.jpg",
+      "images/properties-md-img-02.jpg",
+      "images/properties-md-img-03.jpg"
+    ],
+    "videos": [],
+    "views": 10,
+    "tours": 2
+  },
+  {
+    "id": 3,
+    "type": 1,
+    "sellType": 0,
+    "name": "Office for sale",
+    "description": "Big office space in Belgrade",
+    "location": {
+      "city": "Beograd",
+      "address": "Knez Mihajlova 10",
+      "coordinates": [
+        32.30642,
+        -122.61458
+      ],
+      "map": "images/map-example.JPG"
+    },
+    "info": {
+      "text": "Great downtown core location for this second floor 90 sq meters office space.",
+      "features": [
+        "Fitness",
+        "Showers",
+        "Built in 2012",
+        "Great view",
+        "Doorman"
+      ],
+      "rooms": 6,
+      "beds": 0,
+      "parking": false,
+      "heating": "1",
+      "building": {
+        "elevator": true,
+        "intercom": true,
+        "cameras": true,
+        "security": true,
+        "wheelchair": true
+      }
+    },
+    "area": 90,
+    "price": 180000,
+    "date": 1493697802,
+    "contact": {
+      "phone": "1234",
+      "email": "zika@whitehouse.gov"
+    },
+    "photos": [
+      "images/office1.jpg",
+      "images/properties-md-img-02.jpg",
+      "images/properties-md-img-03.jpg"
+    ],
+    "videos": [],
+    "views": 10,
+    "tours": 2
+  },
+  {
+    "id": 4,
+    "type": 1,
+    "sellType": 1,
+    "name": "Store space for rent",
+    "description": "Great store space in Novi Sad",
+    "location": {
+      "city": "Novi Sad",
+      "address": "Kneza Milosa 13",
+      "coordinates": [
+        32.30642,
+        -122.61458
+      ],
+      "map": "images/map-example.JPG"
+    },
+    "info": {
+      "text": "High visibility corner storefront retail space in downtown core. 20 square meters space with lots of windows, storage are and private washroom. Lake and mountain views and a fantastic location. Prime location with lots of vehicle and foot traffic. Bring your ideas for this space as it is a great place for a business.",
+      "features": [
+        "Showers",
+        "Built in 2012",
+        "Center",
+        "Storage area"
+      ],
+      "rooms": 1,
+      "beds": 0,
+      "parking": true,
+      "heating": "3",
+      "building": {
+        "elevator": true,
+        "intercom": true,
+        "cameras": true,
+        "security": true,
+        "wheelchair": true
+      }
+    },
+    "area": 70,
+    "price": 180000,
+    "date": 1493697802,
+    "contact": {
+      "phone": "1234",
+      "email": "zika@whitehouse.gov"
+    },
+    "photos": [
+      "images/store1.jpg",
+      "images/properties-md-img-02.jpg",
+      "images/properties-md-img-03.jpg"
+    ],
+    "videos": [],
+    "views": 10,
+    "tours": 2
+  },
+  {
+    "id": 5,
+    "type": 2,
+    "sellType": 0,
+    "name": "Room for rent",
+    "description": "Rent a room in Belgrade",
+    "location": {
+      "city": "Beograd",
+      "address": "Hajduk Stankova 5",
+      "coordinates": [
+        32.30642,
+        -122.61458
+      ],
+      "map": "images/map-example.JPG"
+    },
+    "info": {
+      "text": "A stunning modern flat with lift access, located in a beautiful tree lined road oozing character and charm in close proximity to the heart of Belgrade. It is a Large spacious flat with a fully integrated kitchen, modern bathroom and completed with high end fixtures and fittings.",
+      "features": [
+        "Separate bathroom",
+        "Built in 2013",
+        "Center",
+        "Storage area",
+        "Doorman"
+      ],
+      "rooms": 1,
+      "beds": 1,
+      "parking": true,
+      "heating": "2",
+      "building": {
+        "elevator": true,
+        "intercom": true,
+        "cameras": false,
+        "security": false,
+        "wheelchair": false
+      }
+    },
+    "area": 12,
+    "price": 15,
+    "date": 1493697802,
+    "contact": {
+      "phone": "1234",
+      "email": "zika@whitehouse.gov"
+    },
+    "photos": [
+      "images/room1.jpg",
+      "images/properties-md-img-02.jpg",
+      "images/properties-md-img-03.jpg"
+    ],
+    "videos": [],
+    "views": 10,
+    "tours": 2
+  },
+  {
+    "id": 6,
+    "type": 0,
+    "sellType": 0,
+    "name": "Housing Property",
+    "description": "Dramatic & urban condo",
+    "location": {
+      "city": "Nis",
+      "address": "Perina 1",
+      "coordinates": [
+        32.30642,
+        -122.61458
+      ],
+      "map": "images/map-example.JPG"
+    },
+    "info": {
+      "text": "This spectacular full floor, 8,255 square foot sprawling penthouse includes six bedrooms, seven bathrooms, library with wood-burning fireplace and two powder rooms. North, South, East, and West exposures provide panoramic views of Central Park and the City",
+      "features": [
+        "Fitness",
+        "Center",
+        "Doorman",
+        "View: Park",
+        "Fireplace",
+        "Garden"
+      ],
+      "rooms": 1,
+      "beds": 2,
+      "parking": false,
+      "heating": "3",
+      "building": {
+        "elevator": true,
+        "intercom": true,
+        "cameras": false,
+        "security": false,
+        "wheelchair": true
+      }
+    },
+    "area": 40,
+    "price": 60000,
+    "date": 1493596800,
+    "contact": {
+      "phone": "123",
+      "email": "pera@whitehouse.gov"
+    },
+    "photos": [
+      "images/room2.jpg",
+      "images/properties-md-img-03.jpg",
+      "images/properties-md-img-04.jpg"
+    ],
+    "videos": [
+      "videos/1.mp4"
+    ],
+    "views": 10,
+    "tours": 2
+  },
+  {
+    "id": 7,
+    "type": 0,
+    "sellType": 0,
+    "name": "Housing Property",
+    "description": "Dramatic & urban condo",
+    "location": {
+      "city": "Novi Sad",
+      "address": "Perina 1",
+      "coordinates": [
+        32.30642,
+        -122.61458
+      ],
+      "map": "images/map-example.JPG"
+    },
+    "info": {
+      "text": "This spectacular full floor, 8,255 square foot sprawling penthouse includes six bedrooms, seven bathrooms, library with wood-burning fireplace and two powder rooms. North, South, East, and West exposures provide panoramic views of Central Park and the City",
+      "features": [
+        "Fitness",
+        "Center",
+        "Doorman",
+        "View: Park",
+        "Fireplace",
+        "Garden"
+      ],
+      "rooms": 1,
+      "beds": 2,
+      "parking": false,
+      "heating": "3",
+      "building": {
+        "elevator": true,
+        "intercom": true,
+        "cameras": false,
+        "security": false,
+        "wheelchair": true
+      }
+    },
+    "area": 42,
+    "price": 60000,
+    "date": 1493596800,
+    "contact": {
+      "phone": "123",
+      "email": "pera@whitehouse.gov"
+    },
+    "photos": [
+      "images/room3.jpg",
+      "images/properties-md-img-03.jpg",
+      "images/properties-md-img-04.jpg"
+    ],
+    "videos": [
+      "videos/1.mp4"
+    ],
+    "views": 10,
+    "tours": 2
+  },
+  {
+    "id": 8,
+    "type": 2,
+    "sellType": 0,
+    "name": "Room for rent",
+    "description": "Rent a room in Belgrade",
+    "location": {
+      "city": "Beograd",
+      "address": "Hajduk Stankova 5",
+      "coordinates": [
+        32.30642,
+        -122.61458
+      ],
+      "map": "images/map-example.JPG"
+    },
+    "info": {
+      "text": "A stunning modern flat with lift access, located in a beautiful tree lined road oozing character and charm in close proximity to the heart of Belgrade. It is a Large spacious flat with a fully integrated kitchen, modern bathroom and completed with high end fixtures and fittings.",
+      "features": [
+        "Separate bathroom",
+        "Built in 2013",
+        "Center",
+        "Storage area",
+        "Doorman"
+      ],
+      "rooms": 1,
+      "beds": 1,
+      "parking": true,
+      "heating": "2",
+      "building": {
+        "elevator": true,
+        "intercom": true,
+        "cameras": false,
+        "security": false,
+        "wheelchair": false
+      }
+    },
+    "area": 10,
+    "price": 15,
+    "date": 1493697802,
+    "contact": {
+      "phone": "1234",
+      "email": "zika@whitehouse.gov"
+    },
+    "photos": [
+      "images/room4.jpg",
+      "images/properties-md-img-02.jpg",
+      "images/properties-md-img-03.jpg"
+    ],
+    "videos": [],
+    "views": 10,
+    "tours": 2
+  },
+  {
+    "id": 9,
+    "type": 1,
+    "sellType": 1,
+    "name": "Store space for rent",
+    "description": "Great store space in Novi Sad",
+    "location": {
+      "city": "Novi Sad",
+      "address": "Kneza Milosa 13",
+      "coordinates": [
+        32.30642,
+        -122.61458
+      ],
+      "map": "images/map-example.JPG"
+    },
+    "info": {
+      "text": "High visibility corner storefront retail space in downtown core. 20 square meters space with lots of windows, storage are and private washroom. Lake and mountain views and a fantastic location. Prime location with lots of vehicle and foot traffic. Bring your ideas for this space as it is a great place for a business.",
+      "features": [
+        "Showers",
+        "Built in 2012",
+        "Center",
+        "Storage area"
+      ],
+      "rooms": 1,
+      "beds": 0,
+      "parking": true,
+      "heating": "4",
+      "building": {
+        "elevator": true,
+        "intercom": true,
+        "cameras": true,
+        "security": true,
+        "wheelchair": true
+      }
+    },
+    "area": 93,
+    "price": 180000,
+    "date": 1493697802,
+    "contact": {
+      "phone": "1234",
+      "email": "zika@whitehouse.gov"
+    },
+    "photos": [
+      "images/store2.jpg",
+      "images/properties-md-img-02.jpg",
+      "images/properties-md-img-03.jpg"
+    ],
+    "videos": [],
+    "views": 10,
+    "tours": 2
+  },
+  {
+    "id": 10,
+    "type": 0,
+    "sellType": 0,
+    "name": "Housing Property",
     "description": "Dramatic & urban condo",
     "location": {
       "city": "Beograd",
@@ -37,14 +511,14 @@
       }
     },
     "area": 40,
-    "price": 500,
+    "price": 60000,
     "date": 1493596800,
     "contact": {
       "phone": "123",
       "email": "pera@whitehouse.gov"
     },
     "photos": [
-      "images/properties-md-img-01.jpg",
+      "images/room5.jpg",
       "images/properties-md-img-03.jpg",
       "images/properties-md-img-04.jpg"
     ],
@@ -55,13 +529,167 @@
     "tours": 2
   },
   {
-    "id": 2,
+    "id": 11,
+    "type": 2,
+    "sellType": 0,
+    "name": "Room for rent",
+    "description": "Rent a room in Nis",
+    "location": {
+      "city": "Nis",
+      "address": "Hajduk Stankova 5",
+      "coordinates": [
+        32.30642,
+        -122.61458
+      ],
+      "map": "images/map-example.JPG"
+    },
+    "info": {
+      "text": "A stunning modern flat with lift access, located in a beautiful tree lined road oozing character and charm in close proximity to the heart of Belgrade. It is a Large spacious flat with a fully integrated kitchen, modern bathroom and completed with high end fixtures and fittings.",
+      "features": [
+        "Separate bathroom",
+        "Built in 2013",
+        "Center",
+        "Storage area",
+        "Doorman"
+      ],
+      "rooms": 1,
+      "beds": 1,
+      "parking": true,
+      "heating": "2",
+      "building": {
+        "elevator": true,
+        "intercom": true,
+        "cameras": false,
+        "security": false,
+        "wheelchair": false
+      }
+    },
+    "area": 10,
+    "price": 15,
+    "date": 1493697802,
+    "contact": {
+      "phone": "1234",
+      "email": "zika@whitehouse.gov"
+    },
+    "photos": [
+      "images/room6.jpg",
+      "images/properties-md-img-02.jpg",
+      "images/properties-md-img-03.jpg"
+    ],
+    "videos": [],
+    "views": 10,
+    "tours": 2
+  },
+  {
+    "id": 12,
     "type": 0,
     "sellType": 1,
-    "name": "Drugi stan",
+    "name": "Housing Property",
+    "description": "Cozy family home",
+    "location": {
+      "city": "Novi Sad",
+      "address": "Kraljice Natalije 20",
+      "coordinates": [
+        32.30642,
+        -122.61458
+      ],
+      "map": "images/map-example.JPG"
+    },
+    "info": {
+      "text": "This stylish residence is nestled on a large level block in a desirably tranquil cul-de-sac location. The appartmant comes complete with two living rooms, a welcoming kitchen/dining area, two bathrooms, three bedrooms, a study and a laundry, and retains the value of peaceful living while being conveniently close to shops, school and transport.",
+      "features": [
+        "Fitness",
+        "Built in 2012",
+        "Fireplace",
+        "Garden"
+      ],
+      "rooms": 6,
+      "beds": 3,
+      "parking": true,
+      "heating": "1",
+      "building": {
+        "elevator": true,
+        "intercom": true,
+        "cameras": true,
+        "security": false,
+        "wheelchair": true
+      }
+    },
+    "area": 90,
+    "price": 1000.43,
+    "date": 1493697800,
+    "contact": {
+      "phone": "1234",
+      "email": "zika@whitehouse.gov"
+    },
+    "photos": [
+      "images/room7.jpg",
+      "images/properties-md-img-02.jpg",
+      "images/properties-md-img-03.jpg"
+    ],
+    "videos": [],
+    "views": 10,
+    "tours": 2
+  },
+  {
+    "id": 13,
+    "type": 0,
+    "sellType": 1,
+    "name": "Housing Property",
+    "description": "Cozy family home",
+    "location": {
+      "city": "Novi Sad",
+      "address": "Kraljice Natalije 20",
+      "coordinates": [
+        32.30642,
+        -122.61458
+      ],
+      "map": "images/map-example.JPG"
+    },
+    "info": {
+      "text": "This stylish residence is nestled on a large level block in a desirably tranquil cul-de-sac location. The appartmant comes complete with two living rooms, a welcoming kitchen/dining area, two bathrooms, three bedrooms, a study and a laundry, and retains the value of peaceful living while being conveniently close to shops, school and transport.",
+      "features": [
+        "Fitness",
+        "Built in 2012",
+        "Fireplace",
+        "Garden"
+      ],
+      "rooms": 6,
+      "beds": 3,
+      "parking": false,
+      "heating": "4",
+      "building": {
+        "elevator": true,
+        "intercom": true,
+        "cameras": true,
+        "security": false,
+        "wheelchair": true
+      }
+    },
+    "area": 90,
+    "price": 1000.43,
+    "date": 1493697800,
+    "contact": {
+      "phone": "1234",
+      "email": "zika@whitehouse.gov"
+    },
+    "photos": [
+      "images/properties-md-img-05.jpg",
+      "images/properties-md-img-02.jpg",
+      "images/properties-md-img-03.jpg"
+    ],
+    "videos": [],
+    "views": 10,
+    "tours": 2
+  },
+  {
+    "id": 14,
+    "type": 0,
+    "sellType": 0,
+    "name": "Housing Property",
     "description": "Dramatic & urban condo",
     "location": {
-      "city": "Cajetina",
+      "city": "Beograd",
       "address": "Perina 1",
       "coordinates": [
         32.30642,
@@ -76,14 +704,13 @@
         "Center",
         "Doorman",
         "View: Park",
-        "Built in 2015",
         "Fireplace",
         "Garden"
       ],
-      "rooms": 2.5,
+      "rooms": 1,
       "beds": 2,
       "parking": false,
-      "heating": "1",
+      "heating": "3",
       "building": {
         "elevator": true,
         "intercom": true,
@@ -92,15 +719,692 @@
         "wheelchair": true
       }
     },
-    "area": 27.3,
-    "price": 1000.43,
-    "date": 1493697800,
+    "area": 40,
+    "price": 70000,
+    "date": 1493596800,
     "contact": {
       "phone": "123",
       "email": "pera@whitehouse.gov"
     },
     "photos": [
+      "images/properties-md-img-06.jpg",
+      "images/properties-md-img-03.jpg",
+      "images/properties-md-img-04.jpg"
+    ],
+    "videos": [
+      "videos/1.mp4"
+    ],
+    "views": 10,
+    "tours": 2
+  },
+  {
+    "id": 15,
+    "type": 2,
+    "sellType": 0,
+    "name": "Room for rent",
+    "description": "Rent a room in Belgrade",
+    "location": {
+      "city": "Beograd",
+      "address": "Hajduk Stankova 5",
+      "coordinates": [
+        32.30642,
+        -122.61458
+      ],
+      "map": "images/map-example.JPG"
+    },
+    "info": {
+      "text": "A stunning modern flat with lift access, located in a beautiful tree lined road oozing character and charm in close proximity to the heart of Belgrade. It is a Large spacious flat with a fully integrated kitchen, modern bathroom and completed with high end fixtures and fittings.",
+      "features": [
+        "Separate bathroom",
+        "Built in 2013",
+        "Center",
+        "Storage area",
+        "Doorman"
+      ],
+      "rooms": 1,
+      "beds": 1,
+      "parking": false,
+      "heating": "2",
+      "building": {
+        "elevator": true,
+        "intercom": true,
+        "cameras": false,
+        "security": false,
+        "wheelchair": false
+      }
+    },
+    "area": 10,
+    "price": 14,
+    "date": 1493697802,
+    "contact": {
+      "phone": "1234",
+      "email": "zika@whitehouse.gov"
+    },
+    "photos": [
+      "images/properties-md-img-07.jpg",
+      "images/properties-md-img-02.jpg",
+      "images/properties-md-img-03.jpg"
+    ],
+    "videos": [],
+    "views": 10,
+    "tours": 2
+  },
+  {
+    "id": 16,
+    "type": 0,
+    "sellType": 1,
+    "name": "Housing Property",
+    "description": "Cozy family home",
+    "location": {
+      "city": "Novi Sad",
+      "address": "Kraljice Natalije 20",
+      "coordinates": [
+        32.30642,
+        -122.61458
+      ],
+      "map": "images/map-example.JPG"
+    },
+    "info": {
+      "text": "This stylish residence is nestled on a large level block in a desirably tranquil cul-de-sac location. The appartmant comes complete with two living rooms, a welcoming kitchen/dining area, two bathrooms, three bedrooms, a study and a laundry, and retains the value of peaceful living while being conveniently close to shops, school and transport.",
+      "features": [
+        "Fitness",
+        "Built in 2012",
+        "Fireplace",
+        "Garden"
+      ],
+      "rooms": 6,
+      "beds": 3,
+      "parking": true,
+      "heating": "1",
+      "building": {
+        "elevator": true,
+        "intercom": true,
+        "cameras": true,
+        "security": false,
+        "wheelchair": true
+      }
+    },
+    "area": 90,
+    "price": 1000,
+    "date": 1493697800,
+    "contact": {
+      "phone": "1234",
+      "email": "zika@whitehouse.gov"
+    },
+    "photos": [
+      "images/properties-md-img-08.jpg",
+      "images/properties-md-img-02.jpg",
+      "images/properties-md-img-03.jpg"
+    ],
+    "videos": [],
+    "views": 10,
+    "tours": 2
+  },
+  {
+    "id": 17,
+    "type": 1,
+    "sellType": 0,
+    "name": "Office for sale",
+    "description": "Big office space in the center",
+    "location": {
+      "city": "Beograd",
+      "address": "Knez Mihajlova 10",
+      "coordinates": [
+        32.30642,
+        -122.61458
+      ],
+      "map": "images/map-example.JPG"
+    },
+    "info": {
+      "text": "Great downtown core location for this second floor 90 sq meters office space.",
+      "features": [
+        "Fitness",
+        "Showers",
+        "Built in 2012",
+        "Great view",
+        "Doorman"
+      ],
+      "rooms": 6,
+      "beds": 0,
+      "parking": true,
+      "heating": "3",
+      "building": {
+        "elevator": true,
+        "intercom": true,
+        "cameras": true,
+        "security": true,
+        "wheelchair": true
+      }
+    },
+    "area": 90,
+    "price": 190000,
+    "date": 1493697802,
+    "contact": {
+      "phone": "1234",
+      "email": "zika@whitehouse.gov"
+    },
+    "photos": [
+      "images/office2.jpg",
+      "images/properties-md-img-02.jpg",
+      "images/properties-md-img-03.jpg"
+    ],
+    "videos": [],
+    "views": 10,
+    "tours": 2
+  },
+  {
+    "id": 18,
+    "type": 0,
+    "sellType": 0,
+    "name": "Housing Property",
+    "description": "Dramatic & urban condo",
+    "location": {
+      "city": "Beograd",
+      "address": "Perina 1",
+      "coordinates": [
+        32.30642,
+        -122.61458
+      ],
+      "map": "images/map-example.JPG"
+    },
+    "info": {
+      "text": "This spectacular full floor, 8,255 square foot sprawling penthouse includes six bedrooms, seven bathrooms, library with wood-burning fireplace and two powder rooms. North, South, East, and West exposures provide panoramic views of Central Park and the City",
+      "features": [
+        "Fitness",
+        "Center",
+        "Doorman",
+        "View: Park",
+        "Fireplace",
+        "Garden"
+      ],
+      "rooms": 1,
+      "beds": 2,
+      "parking": false,
+      "heating": "0",
+      "building": {
+        "elevator": true,
+        "intercom": true,
+        "cameras": false,
+        "security": false,
+        "wheelchair": true
+      }
+    },
+    "area": 40,
+    "price": 50000,
+    "date": 1493596800,
+    "contact": {
+      "phone": "123",
+      "email": "pera@whitehouse.gov"
+    },
+    "photos": [
+      "images/properties-md-img-04.jpg",
+      "images/properties-md-img-03.jpg",
+      "images/properties-md-img-04.jpg"
+    ],
+    "videos": [
+      "videos/1.mp4"
+    ],
+    "views": 10,
+    "tours": 2
+  },
+  {
+    "id": 19,
+    "type": 1,
+    "sellType": 1,
+    "name": "Store space for rent",
+    "description": "Great store space in Novi Sad",
+    "location": {
+      "city": "Novi Sad",
+      "address": "Kneza Milosa 13",
+      "coordinates": [
+        32.30642,
+        -122.61458
+      ],
+      "map": "images/map-example.JPG"
+    },
+    "info": {
+      "text": "High visibility corner storefront retail space in downtown core. 20 square meters space with lots of windows, storage are and private washroom. Lake and mountain views and a fantastic location. Prime location with lots of vehicle and foot traffic. Bring your ideas for this space as it is a great place for a business.",
+      "features": [
+        "Showers",
+        "Built in 2012",
+        "Center",
+        "Storage area"
+      ],
+      "rooms": 1,
+      "beds": 0,
+      "parking": true,
+      "heating": "2",
+      "building": {
+        "elevator": true,
+        "intercom": true,
+        "cameras": true,
+        "security": true,
+        "wheelchair": true
+      }
+    },
+    "area": 90,
+    "price": 200000,
+    "date": 1493697802,
+    "contact": {
+      "phone": "1234",
+      "email": "zika@whitehouse.gov"
+    },
+    "photos": [
+      "images/store3.jpg",
+      "images/properties-md-img-02.jpg",
+      "images/properties-md-img-03.jpg"
+    ],
+    "videos": [],
+    "views": 10,
+    "tours": 2
+  },
+  {
+    "id": 20,
+    "type": 0,
+    "sellType": 0,
+    "name": "Housing Property",
+    "description": "Dramatic & urban condo",
+    "location": {
+      "city": "Beograd",
+      "address": "Perina 1",
+      "coordinates": [
+        32.30642,
+        -122.61458
+      ],
+      "map": "images/map-example.JPG"
+    },
+    "info": {
+      "text": "This spectacular full floor, 8,255 square foot sprawling penthouse includes six bedrooms, seven bathrooms, library with wood-burning fireplace and two powder rooms. North, South, East, and West exposures provide panoramic views of Central Park and the City",
+      "features": [
+        "Fitness",
+        "Center",
+        "Doorman",
+        "View: Park",
+        "Fireplace",
+        "Garden"
+      ],
+      "rooms": 1,
+      "beds": 2,
+      "parking": false,
+      "heating": "0",
+      "building": {
+        "elevator": true,
+        "intercom": true,
+        "cameras": false,
+        "security": false,
+        "wheelchair": true
+      }
+    },
+    "area": 40,
+    "price": 60000,
+    "date": 1493596800,
+    "contact": {
+      "phone": "123",
+      "email": "pera@whitehouse.gov"
+    },
+    "photos": [
+      "images/properties-md-img-03.jpg",
+      "images/properties-md-img-02.jpg",
+      "images/properties-md-img-04.jpg"
+    ],
+    "videos": [
+      "videos/1.mp4"
+    ],
+    "views": 10,
+    "tours": 2
+  },
+  {
+    "id": 21,
+    "type": 0,
+    "sellType": 1,
+    "name": "Housing Property",
+    "description": "Cozy family home",
+    "location": {
+      "city": "Novi Sad",
+      "address": "Kraljice Natalije 20",
+      "coordinates": [
+        32.30642,
+        -122.61458
+      ],
+      "map": "images/map-example.JPG"
+    },
+    "info": {
+      "text": "This stylish residence is nestled on a large level block in a desirably tranquil cul-de-sac location. The appartmant comes complete with two living rooms, a welcoming kitchen/dining area, two bathrooms, three bedrooms, a study and a laundry, and retains the value of peaceful living while being conveniently close to shops, school and transport.",
+      "features": [
+        "Fitness",
+        "Built in 2012",
+        "Fireplace",
+        "Garden"
+      ],
+      "rooms": 6,
+      "beds": 3,
+      "parking": true,
+      "heating": "1",
+      "building": {
+        "elevator": true,
+        "intercom": true,
+        "cameras": true,
+        "security": false,
+        "wheelchair": true
+      }
+    },
+    "area": 90,
+    "price": 1200,
+    "date": 1493697800,
+    "contact": {
+      "phone": "1234",
+      "email": "zika@whitehouse.gov"
+    },
+    "photos": [
+      "images/price-md-img1.jpg",
+      "images/properties-md-img-02.jpg",
+      "images/properties-md-img-03.jpg"
+    ],
+    "videos": [],
+    "views": 10,
+    "tours": 2
+  },
+  {
+    "id": 22,
+    "type": 0,
+    "sellType": 1,
+    "name": "Housing Property",
+    "description": "Cozy family home",
+    "location": {
+      "city": "Nis",
+      "address": "Kraljice Natalije 20",
+      "coordinates": [
+        32.30642,
+        -122.61458
+      ],
+      "map": "images/map-example.JPG"
+    },
+    "info": {
+      "text": "This stylish residence is nestled on a large level block in a desirably tranquil cul-de-sac location. The appartmant comes complete with two living rooms, a welcoming kitchen/dining area, two bathrooms, three bedrooms, a study and a laundry, and retains the value of peaceful living while being conveniently close to shops, school and transport.",
+      "features": [
+        "Fitness",
+        "Built in 2012",
+        "Fireplace",
+        "Garden"
+      ],
+      "rooms": 6,
+      "beds": 3,
+      "parking": true,
+      "heating": "1",
+      "building": {
+        "elevator": true,
+        "intercom": true,
+        "cameras": true,
+        "security": false,
+        "wheelchair": true
+      }
+    },
+    "area": 90,
+    "price": 1300,
+    "date": 1493697800,
+    "contact": {
+      "phone": "1234",
+      "email": "zika@whitehouse.gov"
+    },
+    "photos": [
       "images/properties-single-img-01.jpg",
+      "images/properties-md-img-02.jpg",
+      "images/properties-md-img-03.jpg"
+    ],
+    "videos": [],
+    "views": 10,
+    "tours": 2
+  },
+  {
+    "id": 23,
+    "type": 0,
+    "sellType": 1,
+    "name": "Housing Property",
+    "description": "Cozy family home",
+    "location": {
+      "city": "Beograd",
+      "address": "Kraljice Natalije 20",
+      "coordinates": [
+        32.30642,
+        -122.61458
+      ],
+      "map": "images/map-example.JPG"
+    },
+    "info": {
+      "text": "This stylish residence is nestled on a large level block in a desirably tranquil cul-de-sac location. The appartmant comes complete with two living rooms, a welcoming kitchen/dining area, two bathrooms, three bedrooms, a study and a laundry, and retains the value of peaceful living while being conveniently close to shops, school and transport.",
+      "features": [
+        "Fitness",
+        "Built in 2012",
+        "Fireplace",
+        "Garden"
+      ],
+      "rooms": 6,
+      "beds": 3,
+      "parking": false,
+      "heating": "1",
+      "building": {
+        "elevator": true,
+        "intercom": true,
+        "cameras": true,
+        "security": false,
+        "wheelchair": true
+      }
+    },
+    "area": 92,
+    "price": 1100,
+    "date": 1493697800,
+    "contact": {
+      "phone": "1234",
+      "email": "zika@whitehouse.gov"
+    },
+    "photos": [
+      "images/properties-single-img-01.jpg",
+      "images/properties-md-img-02.jpg",
+      "images/properties-md-img-03.jpg"
+    ],
+    "videos": [],
+    "views": 10,
+    "tours": 2
+  },
+  {
+    "id": 24,
+    "type": 1,
+    "sellType": 1,
+    "name": "Store space for rent",
+    "description": "Great store space in Novi Sad",
+    "location": {
+      "city": "Novi Sad",
+      "address": "Kneza Milosa 13",
+      "coordinates": [
+        32.30642,
+        -122.61458
+      ],
+      "map": "images/map-example.JPG"
+    },
+    "info": {
+      "text": "High visibility corner storefront retail space in downtown core. 20 square meters space with lots of windows, storage are and private washroom. Lake and mountain views and a fantastic location. Prime location with lots of vehicle and foot traffic. Bring your ideas for this space as it is a great place for a business.",
+      "features": [
+        "Showers",
+        "Built in 2012",
+        "Center",
+        "Storage area"
+      ],
+      "rooms": 1,
+      "beds": 0,
+      "parking": true,
+      "heating": "4",
+      "building": {
+        "elevator": true,
+        "intercom": true,
+        "cameras": true,
+        "security": true,
+        "wheelchair": true
+      }
+    },
+    "area": 90,
+    "price": 180000,
+    "date": 1493697802,
+    "contact": {
+      "phone": "1234",
+      "email": "zika@whitehouse.gov"
+    },
+    "photos": [
+      "images/store2.jpg",
+      "images/properties-md-img-02.jpg",
+      "images/properties-md-img-03.jpg"
+    ],
+    "videos": [],
+    "views": 10,
+    "tours": 2
+  },
+  {
+    "id": 25,
+    "type": 1,
+    "sellType": 0,
+    "name": "Office for sale",
+    "description": "Office space in Belgrade",
+    "location": {
+      "city": "Beograd",
+      "address": "Knez Mihajlova 10",
+      "coordinates": [
+        32.30642,
+        -122.61458
+      ],
+      "map": "images/map-example.JPG"
+    },
+    "info": {
+      "text": "Great downtown core location for this second floor 90 sq meters office space.",
+      "features": [
+        "Fitness",
+        "Showers",
+        "Built in 2012",
+        "Great view",
+        "Doorman"
+      ],
+      "rooms": 6,
+      "beds": 0,
+      "parking": false,
+      "heating": "1",
+      "building": {
+        "elevator": true,
+        "intercom": true,
+        "cameras": true,
+        "security": true,
+        "wheelchair": true
+      }
+    },
+    "area": 95,
+    "price": 195000,
+    "date": 1493697802,
+    "contact": {
+      "phone": "1234",
+      "email": "zika@whitehouse.gov"
+    },
+    "photos": [
+      "images/office3.jpg",
+      "images/properties-md-img-02.jpg",
+      "images/properties-md-img-03.jpg"
+    ],
+    "videos": [],
+    "views": 10,
+    "tours": 2
+  },
+  {
+    "id": 26,
+    "type": 1,
+    "sellType": 0,
+    "name": "Office for sale",
+    "description": "Big office space in the center of Nis",
+    "location": {
+      "city": "Nis",
+      "address": "Knez Mihajlova 10",
+      "coordinates": [
+        32.30642,
+        -122.61458
+      ],
+      "map": "images/map-example.JPG"
+    },
+    "info": {
+      "text": "Great downtown core location for this second floor 90 sq meters office space.",
+      "features": [
+        "Fitness",
+        "Showers",
+        "Built in 2012",
+        "Great view",
+        "Doorman"
+      ],
+      "rooms": 6,
+      "beds": 0,
+      "parking": false,
+      "heating": "4",
+      "building": {
+        "elevator": true,
+        "intercom": true,
+        "cameras": true,
+        "security": true,
+        "wheelchair": true
+      }
+    },
+    "area": 90,
+    "price": 180000,
+    "date": 1493697802,
+    "contact": {
+      "phone": "1234",
+      "email": "zika@whitehouse.gov"
+    },
+    "photos": [
+      "images/office1.jpg",
+      "images/properties-md-img-02.jpg",
+      "images/properties-md-img-03.jpg"
+    ],
+    "videos": [],
+    "views": 10,
+    "tours": 2
+  },
+  {
+    "id": 27,
+    "type": 1,
+    "sellType": 1,
+    "name": "Store space for rent",
+    "description": "Great store space in Novi Sad",
+    "location": {
+      "city": "Novi Sad",
+      "address": "Kneza Milosa 13",
+      "coordinates": [
+        32.30642,
+        -122.61458
+      ],
+      "map": "images/map-example.JPG"
+    },
+    "info": {
+      "text": "High visibility corner storefront retail space in downtown core. 20 square meters space with lots of windows, storage are and private washroom. Lake and mountain views and a fantastic location. Prime location with lots of vehicle and foot traffic. Bring your ideas for this space as it is a great place for a business.",
+      "features": [
+        "Showers",
+        "Built in 2012",
+        "Center",
+        "Storage area"
+      ],
+      "rooms": 1,
+      "beds": 0,
+      "parking": true,
+      "heating": "2",
+      "building": {
+        "elevator": true,
+        "intercom": true,
+        "cameras": true,
+        "security": true,
+        "wheelchair": true
+      }
+    },
+    "area": 85,
+    "price": 175000,
+    "date": 1493697802,
+    "contact": {
+      "phone": "1234",
+      "email": "zika@whitehouse.gov"
+    },
+    "photos": [
+      "images/store3.jpg",
       "images/properties-md-img-02.jpg",
       "images/properties-md-img-03.jpg"
     ],
