@@ -2009,9 +2009,10 @@ ul.tl-blog-listed li{
 }
 .tl-call-to-action-section h3{
   font-size: 22px;
-  color: #fff;
   font-weight: 400;
+  line-height: 2.5;
   margin: 0px 0 0;
+  color: #fff;
 }
 .tl-call-to-action-section h3 b{
   font-weight: 700;
@@ -2733,7 +2734,7 @@ ul.tl-listed_v2 li a{
 .tl-footer-middle-section .widget h3,.tl-footer-middle-section .widget h4{
   color: #fff;
 }
-.tl-footer-middle-section .ft-listed li,.tl-footer-middle-section .ft-listed li a{
+.tl-footer-middle-section .ft-listed li{
   color: #b8c9d6;
 }
 /*
@@ -2759,7 +2760,7 @@ ul.tl-listed_v2 li a{
   line-height: 26px;
   font-weight: 400;
   color: #fff;
-  margin: 0;
+  margin-bottom: 10px;
 }
 .ft-listed{
   float: left;
