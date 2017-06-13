@@ -1,0 +1,47 @@
+<div class="col-md-6 col-sm-6 col-xs-12">
+	<!--Properties Box Start-->
+	<div class="tl-properties-item">
+		<figure class="tl-properties-thumb">
+			<div class="entry-img-container">
+				<img src="{{photos.[0]}}" alt="" style="height: 100%">
+			</div>
+			<figcaption class="tl-caption">
+				<div class="top-text">
+					<a href="properties-detail.html?{{id}}">
+						{{#if sellType}}
+						<span class="rent-btn">For Rent</span>
+						{{else}}
+						<span class="rent-btn bg-red">For Sale</span>
+						{{/if}}
+					</a>
+					{{#isFavorite id}}
+						<a href="" class="like-btn" onclick="removeFromFavorites({{id}}); window">
+							<i class="fa fa-ban" aria-hidden="true"></i>
+						</a
+					{{else}}
+						<a href="" class="like-btn" onclick="addToFavorites({{id}})">
+							<i class="fa fa-heart-o" aria-hidden="true"></i>
+						</a>
+					{{/isFavorite}}
+				</div>
+				<div class="bottom-text">
+					<h3>{{price}} €</h3>
+					{{#location}}
+					<span>{{address}}, {{city}}</span>
+					{{/location}}
+				</div>
+			</figcaption>
+		</figure>
+		<!--Text Holder Start-->
+		<div class="tl-text-holder">
+			<h4><a href="properties-detail.html?{{id}}">{{description}}</a></h4>
+			<ul class="tl-meta-listed">
+				{{#info}}
+				<li> {{rooms}} rooms</li>
+				<li> {{beds}} beds</li>
+				{{/info}}
+				<li> {{area}} m&#178;</li>
+			</ul>
+		</div><!--Text Holder End-->
+	</div><!--Properties Box End-->
+</div>
