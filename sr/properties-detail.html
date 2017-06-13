@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Ant Estate – Property Details</title>
+        <title>Ant Estate – Детаљи о објекту</title>
 
         <!-- Css Files Start -->
 		<link href="css/style.css" rel="stylesheet">
@@ -50,39 +50,39 @@
 									<!--Widget Start-->
 									<div class="widget">
 										<div class="agent-form-outer">
-											<button class="btn-submit fav-btn" type="button" onclick="addDetailFav()">Add to favorites <i class="fa fa-heart-o" aria-hidden="true"></i></button>
+											<button class="btn-submit fav-btn" type="button" onclick="addDetailFav()">Додај у омиљене <i class="fa fa-heart-o" aria-hidden="true"></i></button>
 										</div>
 									</div><!--Widget End-->
 									<!--Widget Start-->
 									<div class="widget widget-agent">
-										<h3>Tour reservation</h3>
+										<h3>Закажи обилазак</h3>
 										<form id="reserve-form" class="agent-form-outer" method="post"
 											  onsubmit="submitTour()">
 											<div class="inner-holder">
-												<input type="text" placeholder="First name" required>
+												<input type="text" placeholder="Име" required>
 											</div>
 
 											<div class="inner-holder">
-												<input type="text" placeholder="Last name" required>
+												<input type="text" placeholder="Презиме" required>
 											</div>
 
 											<div class="inner-holder">
-												<input type="email" placeholder="E-mail" required>
+												<input type="email" placeholder="Електронска пошта" required>
 											</div>
 
 											<div class="inner-holder">
-												<input type="phone" placeholder="Phone number" required pattern="\d.*">
+												<input type="phone" placeholder="Број телефона" required pattern="\d.*">
 											</div>
 
 											<div class="inner-holder">
-												<input type="date" placeholder="Date" required>
+												<input type="date" placeholder="Датум" required>
 											</div>
 
 											<div class="input-holder">
-												<button class="btn-submit" type="submit">Reserve</button>
+												<button class="btn-submit" type="submit">Закажи</button>
 											</div>
 											<div class="input-holder">
-												<label>Number of tours: <span id="num-of-tours"></span></label>
+												<label>Број обилазака: <span id="num-of-tours"></span></label>
 											</div>
 										</form>
 									</div><!--Widget Holder End-->
@@ -145,8 +145,8 @@
 
 				<!--Breadcrum Start-->
 				<ul class="tl-breadcrumb-listed">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="properties.html">Properties</a></li>
+					<li><a href="index.html">Почетна</a></li>
+					<li><a href="properties.html">Објекти</a></li>
 					<li class="active">{{name}}</li>
 				</ul>
 			</div>
@@ -202,7 +202,7 @@
 							<div class="col-md-8 col-sm-8 col-xs-12">
 								<div class="tl-text-holder">
 									{{#location}}
-									<h2>{{address}}, {{city}}{{/location}} - {{price}}EUR</h2>
+									<h2>{{address}}, {{city}}{{/location}} - {{price}} €</h2>
 									<h3>{{type}} - {{sellType}}</h3>
 									<ul class="tl-meta-listed">
 										{{#info}}
