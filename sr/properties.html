@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Ant Estate – Properties</title>
+		<title>Ant Estate – Објекти</title>
 
 		<!-- Css Files Start -->
 		<link href="css/style.css" rel="stylesheet">
@@ -31,11 +31,11 @@
 			<!--Inner Banner Start-->
 			<section class="tl-inner-banner">
 				<div class="container">
-					<h3>Properties</h3>
+					<h3>Објекти</h3>
 					<!--Breadcrum Start-->
 					<ul class="tl-breadcrumb-listed">
-						<li><a href="index.html">Home</a></li>
-						<li class="active">Properties</li>
+						<li><a href="index.html">Почетна</a></li>
+						<li class="active">Објекти</li>
 					</ul>
 				</div>
 			</section><!--Inner Banner End-->
@@ -53,80 +53,80 @@
 								<aside class="tl-sidebar-outer">
 									<!--Widget Holder Start-->
 									<div class="widget widget-advanced-search">
-										<h3>Advanced Search</h3>
+										<h3>Напредна претрага</h3>
 										<!--Advance Search Form Start-->
 										<form action="#" class="tl-advance-search-form">
-											<label>Type</label>
+											<label>Врста</label>
 											<div class="form-group">
 												<select class="form-control" id="type">
-													<option value="0">Housing</option>
-													<option value="1">Business</option>
-													<option value="2">Tourism</option>
+													<option value="0">Стамбени</option>
+													<option value="1">Пословни</option>
+													<option value="2">Туристички</option>
 												</select>
 											</div>
 											<div class="form-group">
 												<select class="form-control" id="sell-type">
-													<option value="0">For Sale</option>
-													<option value="1">For Rent</option>
+													<option value="0">За продају</option>
+													<option value="1">За изнајмљивање</option>
 												</select>
 											</div>
 											
-											<label>Location</label>
+											<label>Место</label>
 											<div class="form-group">
-												<input type="text" id="city" class="form-control" placeholder="City">
+												<input type="text" id="city" class="form-control" placeholder="Град">
 											</div>
 											<div class="form-group">
-												<input type="text" id="address" class="form-control" placeholder="Address">
+												<input type="text" id="address" class="form-control" placeholder="Адреса">
 											</div>
 
-											<label>Parameters</label>
+											<label>Подешавања</label>
 											<div class="form-group">
-												<input type="number" min="0" id="area-min" class="form-control" placeholder="Min area">
-												<input type="number" min="0" id="area-max" class="form-control" placeholder="Max area">
+												<input type="number" min="0" id="area-min" class="form-control" placeholder="Мин површина">
+												<input type="number" min="0" id="area-max" class="form-control" placeholder="Макс површина">
 											</div>
 											<div class="form-group">
-												<input type="number" min="0" id="price-min" class="form-control" placeholder="Min price">
-												<input type="number" min="0" id="price-max" class="form-control" placeholder="Max price">
+												<input type="number" min="0" id="price-min" class="form-control" placeholder="Мин цена">
+												<input type="number" min="0" id="price-max" class="form-control" placeholder="Макс цена">
 											</div>
 											<div class="form-group">
-												<input type="number" min="0" id="rooms-min" class="form-control" placeholder="Min rooms">
-												<input type="number" min="0" id="rooms-max" class="form-control" placeholder="Max rooms">
+												<input type="number" min="0" id="rooms-min" class="form-control" placeholder="Мин број соба">
+												<input type="number" min="0" id="rooms-max" class="form-control" placeholder="Макс број соба">
 											</div>
 											<div class="checkbox">
 												<label>
-													<input type="checkbox" id="parking">Required parking
+													<input type="checkbox" id="parking">Има паркинг
 												</label>
 											</div>
 
-											<label>Heating types</label>
+											<label>Грејање</label>
 											<div class="checkbox">
 												<label>
-													<input type="checkbox" id="heating0" checked>Storage heater
+													<input type="checkbox" id="heating0" checked>Штедњак
 												</label>
 											</div>
 											<div class="checkbox">
 												<label>
-													<input type="checkbox" id="heating1" checked>Central
+													<input type="checkbox" id="heating1" checked>Централно
 												</label>
 											</div>
 											<div class="checkbox">
 												<label>
-													<input type="checkbox" id="heating2" checked>Norwegian radiator
+													<input type="checkbox" id="heating2" checked>Норвешки радијатор
 												</label>
 											</div>
 											<div class="checkbox">
 												<label>
-													<input type="checkbox" id="heating3" checked>Floor
+													<input type="checkbox" id="heating3" checked>Подно
 												</label>
 											</div>
 											<div class="checkbox">
 												<label>
-													<input type="checkbox" id="heating4" checked>Electric
+													<input type="checkbox" id="heating4" checked>На струју
 												</label>
 											</div>
 
 											<button class="btn-search-submit" type="button" onclick="filterClick()">
-												Search Properties
+												Тражи објекте
 											</button>
 										</form><!--Advance Search Form End-->
 									</div><!--Widget Holder End-->
@@ -142,7 +142,7 @@
 
 									<!--Widget Holder Start-->
 									<div class="widget widget-about">
-										<h3>Contact Us</h3>
+										<h3>Контактирајте нас</h3>
 										<ul class="ft-listed">
 											<li>
 												<i class="fa fa-phone" aria-hidden="true"></i>
@@ -163,16 +163,16 @@
 								<div class="tl-filterable-holder tl-filterable-holder_v2">
 									<!--Filterable List Start-->
 									<div class="tl-filterlist">
-										<a href="" onclick="sortClick(2)" class="current">Newest</a>
-										<a href="" onclick="sortClick(0)">Cheapest</a>
+										<a href="" onclick="sortClick(2)" class="current">Најновији</a>
+										<a href="" onclick="sortClick(0)">Најјефтинији</a>
 										<div class="tl-morefilter">
-											<span class="more-filters">More Filters <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+											<span class="more-filters">Још филтера <i class="fa fa-angle-down" aria-hidden="true"></i></span>
 											<ul class="tl-filter-dropdown" id="filter-dropdown">
 												<li>
-													<a href="" onclick="sortClick(3)">Oldest</a>
+													<a href="" onclick="sortClick(3)">Најстарији</a>
 												</li>
 												<li>
-													<a href="" onclick="sortClick(1)">The most expensive</a>
+													<a href="" onclick="sortClick(1)">Најскупљи</a>
 												</li>
 												<li>
 													<a href="" onclick="sortClick(4)">Default</a>
