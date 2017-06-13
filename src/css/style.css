@@ -2734,7 +2734,7 @@ ul.tl-listed_v2 li a{
 .tl-footer-middle-section .widget h3,.tl-footer-middle-section .widget h4{
   color: #fff;
 }
-.tl-footer-middle-section .ft-listed li,.tl-footer-middle-section .ft-listed li a{
+.tl-footer-middle-section .ft-listed li{
   color: #b8c9d6;
 }
 /*
@@ -2760,7 +2760,7 @@ ul.tl-listed_v2 li a{
   line-height: 26px;
   font-weight: 400;
   color: #fff;
-  margin: 0;
+  margin-bottom: 10px;
 }
 .ft-listed{
   float: left;
